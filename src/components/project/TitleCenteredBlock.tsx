@@ -4,7 +4,7 @@ interface TitleCenteredBlockProps {
   title: string;
   textAlign: "center";
   fontSize: number;
-  margin: number;
+  margin?: number;
 }
 
 /* Created for personal use by - Denny Zhou*/
