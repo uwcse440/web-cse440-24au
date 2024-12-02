@@ -10,7 +10,7 @@
   * Note this template's use of comment syntax.
   * Curly brackets delineate a code block, within which you can then initiate a comment.
   * The column of `*` characters has no effect and is included only for readability.
-  */}
+*/}
 
 {/* Tool Documentation
   *
@@ -20,7 +20,7 @@
   * The post then uses [MDX](https://mdxjs.com/) to embedded JSX components.
   * You are not expected to fully understand these components,
   * but can just embed them in your Markdown like you would any HTML tag.
-  */}
+*/}
 
 {/* Project Imports
   *
@@ -30,12 +30,13 @@
   * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
   * but we do not expect or recommend you will need or want additional components.
   * If you find the provided components insufficient, we encourage you to check in with the course staff.
-  */}
+*/}
 
-import { ProjectImageBlock } from "@/components/project/ProjectImageBlock";
-import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
-import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
-import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
+import {ProjectImageBlock} from "@/components/project/ProjectImageBlock";
+import {ProjectImagesBlock} from "@/components/project/ProjectImagesBlock";
+import {ProjectSubtitle} from "@/components/project/ProjectSubtitle";
+import {ProjectTeamGallery} from "@/components/project/ProjectTeamGallery";
+import {CenteredTitleBlock} from "@/components/project/TitleCenteredBlock.tsx";
 
 {/* Image Imports
   *
@@ -45,7 +46,7 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - Give your images meaningful names (e.g., "overview.png").
   * - Only `.jpg` and `.png` file extensions are supported.
   * - If an import is not working, double-check that you have the correct file extension.
-  */}
+*/}
 
 import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
 import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
@@ -57,8 +58,10 @@ import imagePlaceholder300x600 from "public/images/projects/template/post/300x60
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+import mainPage from "public/images/projects/discoverly/post/Main Page.png";
+import mockUp from "public/images/projects/discoverly/post/MockUp.png";
 
-# GemFinder
+# GemHunter
 
 <ProjectSubtitle>Explore, Find, and Share Hidden Gems Through Your Discovery.</ProjectSubtitle>
 
@@ -68,7 +71,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   * - Split each name across two lines.
   * - Crop and scale images to be the size of the placeholder (125px x 150px).
   *   This consistent image size provides a cleaner gallery.
-  */}
+*/}
 
 <ProjectTeamGallery members={[
     {
@@ -91,7 +94,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
         name: ["Sahil", "Puri"],
         photo: imageTeamPerson5,
     },
-]} />
+]}/>
 
 ## Problem and Design Overview
 
@@ -111,36 +114,49 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
+
+{/* A CenteredTitleBlock displays text centered.
+* - The title is configured through properties on the opening `CenteredTitleBlock` tag.
+* - The fontSize is configured through properties on the opening `CenteredTitleBlock` tag.
+* - The margin is configured through properties on the opening `CenteredTitleBlock` tag.
+*
+* See Examples Below How to Use
+*/}
+
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: mainPage,
     }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={500}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+    Discovering unique and memorable experiences shouldn’t be a challenge, yet many existing platforms fail to meet the
+    mark. Most travel and location-based apps provide generic recommendations, overcrowded tourist spots, or outdated
+    information that lacks personal relevance. Users are often left sifting through reviews, blog posts, and forums,
+    hoping to stumble upon hidden gems that truly resonate with their interests. This process is time-consuming and
+    frustrating, especially for those looking to explore lowkey, off-the-beaten-path destinations that offer authentic
+    and unforgettable experiences.
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+    GemFinder is a community-driven app designed to help users explore and uncover hidden gems near them or wherever
+    their adventures take them. Unlike other platforms, GemFinder combines the power of user contributions, personalized
+    discovery, and gamification to create a vibrant ecosystem for exploring the world. With each new hidden gem
+    unlocked, participants will accumulate reputation points which they can use to discover even rarer hidden gems.
 
+</ProjectImageBlock>
+
+## Resulting Design
+
+<CenteredTitleBlock title={"Design Mockup Overview"} fontSize={20}></CenteredTitleBlock>
+
+<ProjectImageBlock
+    image={{
+        src: mockUp,
+        alt: "Every image requires alt text. This should describe the content of that image."
+    }}
+    width={20}
+    maxHeight={"2000px"}
+>
 </ProjectImageBlock>
 
 ## Design Walkthrough
@@ -172,12 +188,12 @@ Donec quis imperdiet justo. Pellentesque semper eleifend ex a rutrum.
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
+    Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
+    quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
+    velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
+    Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
+    felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
+    turpis egestas integer. Auctor augue mauris augue neque gravida.
 
 </ProjectImagesBlock>
 
@@ -194,12 +210,12 @@ turpis egestas integer. Auctor augue mauris augue neque gravida.
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
+    Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
+    quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
+    velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
+    Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
+    felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
+    turpis egestas integer. Auctor augue mauris augue neque gravida.
 
 </ProjectImageBlock>
 
@@ -292,14 +308,14 @@ faucibus nisl tincidunt.
     maxHeight={"400px"}
 >
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+    Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
+    lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
+    Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
+    vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
+    pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
+    Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
+    convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
+    pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
 
 </ProjectImagesBlock>
 
@@ -339,19 +355,19 @@ in nisl nisi. Risus at ultrices mi tempus imperdiet.
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+    Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
+    Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
+    in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
+    tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
+    sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
+    nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
+    Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
+    convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
+    tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
+    ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
+    proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
+    eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
+    vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
 
 </ProjectImageBlock>
 
@@ -377,16 +393,16 @@ vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+    Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
+    elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
+    Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
+    quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
+    Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
+    iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
+    vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
+    aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
+    molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
+    scelerisque eu ultrices vitae auctor.
 
 </ProjectImagesBlock>
 
@@ -398,13 +414,13 @@ scelerisque eu ultrices vitae auctor.
             src: imagePlaceholder600x300,
             alt: "Every image requires alt text. This should describe the content of that image.",
             caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+                "Notice that the text on the left is not broken up by the images."
         },
         {
             src: imagePlaceholder600x300,
             alt: "Every image requires alt text. This should describe the content of that image.",
             caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+                "Notice that the text on the left is not broken up by the images."
         },
     ]}
     direction={"column"}
@@ -412,12 +428,12 @@ scelerisque eu ultrices vitae auctor.
     maxHeight={"200px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+    Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
+    eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
+    pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
+    Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
+    feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
+    nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
+    adipiscing diam donec adipiscing.
 
 </ProjectImagesBlock>
