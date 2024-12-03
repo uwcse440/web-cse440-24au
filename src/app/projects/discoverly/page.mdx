@@ -65,6 +65,7 @@ import addGem from "public/images/projects/discoverly/post/New Gem.png";
 import upgradeTier from "public/images/projects/discoverly/post/Tier Upgrade.png";
 import mapUpgrade from "public/images/projects/discoverly/post/Map Upgrade.png";
 import profile from "public/images/projects/discoverly/post/Profile.png";
+import beforeImg from "public/images/projects/discoverly/post/before.png";
 
 # Gem Hunter
 
@@ -272,7 +273,8 @@ hidden gems, enhancing their exploration journey.
 To gain a deeper understanding of how users interact with mobile applications that encourage exploration
 and community engagement, we conducted a series of tests with our app Gem Hunter. Our primary goal
 was to identify how to encourage users to share their discoveries despite their tendency to
-gatekeep them,  **[2 MORE INSIGHTS TO LIST]**. To achieve this, we recruited a diverse group of participants,
+gatekeep them, how to improve navigation for better user control and feedom, and
+ **[1 MORE INSIGHT TO LIST]**. To achieve this, we recruited a diverse group of participants,
 including individuals with varying levels of technological experience. **[SHOULD ADD MORE TO THIS??]**
 
 
@@ -292,19 +294,19 @@ This led us to gamify our app, introducing a points system where users earn poin
 hidden gems. These points can be used to unlock even rarer hidden gems, providing a motivation to share their gems
 while still feeling rewarded for their exclusivity. 
 
-### Title for an Insight
+### Enhancing Navigation for Better User Control
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            src: beforeImg,
+            alt: "Image of paper prototype before back button navigation and submit buttons were added",
+            caption: "Image shows paper prototype before back button and submit buttons were implemented.",
         },
         {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            src: addGem,
+            alt: "Image showing application with back buttons and submit buttons",
+            caption: "Now implemented functioning back navigation buttons as well as submit buttons.",
         },
     ]}
     direction={"row"}
@@ -312,14 +314,17 @@ while still feeling rewarded for their exclusivity.
     maxHeight={"400px"}
 >
 
-    Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-    lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-    Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-    vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-    pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-    Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-    convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-    pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+A lack of clear navigation options, such as back buttons and submit buttons, significantly impacted
+user experience. During our tests, we observed that users struggled with navigating the app due to
+the absence of essential buttons. Specific evidence from these evaluations highlighted that users
+often felt lost when they could not return to the main map page after filtering preferences or 
+finalizing their contributions without a submit button. One participant noted, "I felt lost on how to
+submit my contribution to the Ravenna Chest, theres no way for me to exit either."
+
+Based on the feedback from our first usability testing, we introduced a back button on each screen
+necessary to facilitate easier navigation and a submit button on relevant screens. These adjustments
+significantly improved usability and user satisfaction, enabling smoother interactions and better user
+control, ultimately enhances the overall experience as well.
 
 </ProjectImagesBlock>
 
