@@ -65,9 +65,12 @@ import addGem from "public/images/projects/discoverly/post/New Gem.png";
 import upgradeTier from "public/images/projects/discoverly/post/Tier Upgrade.png";
 import mapUpgrade from "public/images/projects/discoverly/post/Map Upgrade.png";
 import profile from "public/images/projects/discoverly/post/Profile.png";
-import beforeImg from "public/images/projects/discoverly/post/before.png";
 import beforeRatings from "public/images/projects/discoverly/post/beforeRatings.png";
 import setUp from "public/images/projects/discoverly/post/Setting up.png";
+import beforeNotifs from "public/images/projects/discoverly/post/beforeNotifs.png"
+import beforeImg from "public/images/projects/discoverly/post/before.png";
+
+
 
 # Gem Hunter
 
@@ -310,7 +313,8 @@ This insight posed a significant challenge of how do we encourage users to share
 on this, we identified the need to create compelling incentives for users to share their discoveries.
 This led us to gamify our app, introducing a rewards point system where users earn points for finding and sharing
 hidden gems. These points can be used to unlock even rarer hidden gems, providing a motivation to share their gems
-while still feeling rewarded for their exclusivity. 
+while still feeling rewarded for their exclusivity. "When I find a great low-key spot, I tend to
+not want to share it with anyone except close friends/family."
 
 
 
@@ -361,10 +365,12 @@ adipiscing diam donec adipiscing.
 ## Iterative Design and Key Insights
 
 To gain a deeper understanding of how users interact with mobile applications that encourage exploration
-and community engagement, we conducted a series of tests with our app Gem Hunter. Our primary goal
-was to identify how to enhance the decision-making process through a rating system, how to improve navigation for better user control and freedom, and
- **[1 MORE INSIGHT TO LIST]**. To achieve this, we recruited a diverse group of participants,
-including individuals with varying levels of technological experience. **[need to add more to this]**
+and community engagement, we conducted a series of tests with our app Gem Hunter, these tests
+consisted of paper prototyping, heuristic evaluation, and usability testing. Our primary goal
+was to identify how to enhance the decision-making process through a rating system, 
+how to improve navigation for better user control and freedom, and **[1 MORE INSIGHT TO LIST]**. 
+To achieve this, we recruited a diverse group of participants, including individuals with varying 
+levels of technological experience. **[need to add more to this]**
 
 
 ### Implementation of Rating System for Informed Decision Making
@@ -433,34 +439,38 @@ control, ultimately enhancing the overall experience as well.
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### Clearer Feedback Response
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                "Notice that the text on the left is not broken up by the images."
+            src: beforeNotifs,
+            alt: "Paper prototype previously had too many notifications for upgrade and reputation points, it also only appeared in the phone's notification system.",
+            caption: "The paper prototype had too many notifications for upgrades and reputation points earned. " +
+                "It also unnecessarily delivered through the phone's notification system instead of within the app."
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                "Notice that the text on the left is not broken up by the images."
+            src: upgradeTier,
+            alt: "Mock up image provides notifications integrated as pop-ups within the app to notify users of tier upgrades and earned reputation points.",
+            caption: "The mockup has integrated notifications as pop-ups within the app to notify users " +
+            "of their tier upgrades and earned reputation points." 
         },
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    direction={"row"}
+    width={8}
+    maxHeight={"400px"}
 >
 
-    Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-    eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-    pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-    Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-    feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-    nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-    adipiscing diam donec adipiscing.
+Unnecessary notifications in the phone's notification center hindered user experience, prompting
+the need for a more smooth transition. During our usabilty tests, it became evident how inconvenient
+it is to receive notifications through the phone's notification center rather than as a pop-ups within
+the app itself. We also noticed it does not provide a smooth transition and causes disrupts in the users
+interaction with the app.
+
+To address this, we reworked the notification system by introducing pop-ups directly within the app. These
+in-app pop-ups inform users of tier upgrades and earned reputation points without needing to exit the app.
+This iteration provided a more seamless and integrated user experience, reducing interruptions and 
+allowing users to stau engaged with the app's current content. By refining the notification system,
+we created a more cohesive interaction flow within the app.
 
 </ProjectImagesBlock>
