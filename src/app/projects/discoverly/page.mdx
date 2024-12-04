@@ -181,7 +181,9 @@ import clutterImg from "public/images/projects/discoverly/post/clutter.png";
 #### Configuring Personal Setting/Interest
 <ProjectImageBlock
     image={{
-        src:setUp
+        src:setUp,
+        alt: "Image of how to configure personal settings/interest",
+        caption: "Showcasing overview on how to configure personal settings/interests."
     }}
     width={20}
     maxHeight={"2000px"}
@@ -191,9 +193,42 @@ import clutterImg from "public/images/projects/discoverly/post/clutter.png";
 
 #### Adding New Hidden Gem
 
+<ProjectImageBlock
+    image={{
+        src:setUp,
+        alt: "Image of how to add a new hidden gem",
+        caption: "Showcasing overview on how to add a new hidden gem."
+    }}
+    width={20}
+    maxHeight={"2000px"}
+>
+</ProjectImageBlock>
+
 #### Contributing to Hidden Gem
 
+<ProjectImageBlock
+    image={{
+        src:setUp,
+        alt: "Image of how to contribute to a hidden gem.",
+        caption: "Showcasing overview on how to contribute to a hidden gem."
+    }}
+    width={20}
+    maxHeight={"2000px"}
+>
+</ProjectImageBlock>
+
 #### Profile View
+
+<ProjectImageBlock
+    image={{
+        src:setUp,
+        alt: "Image of how to contribute to a hidden gem.",
+        caption: "Showcasing overview on how to contribute to a hidden gem."
+    }}
+    width={20}
+    maxHeight={"2000px"}
+>
+</ProjectImageBlock>
 
 ## Design Walkthrough
 
@@ -219,11 +254,10 @@ primary goal of our app, which is to foster exploration and build a vibrant comm
             src: pushNotif,
             alt: "After closing your phone, you will get a push notification if you're nearby a hidden gem in your interest.",
         },
-
         { 
             src: popupImg,
             alt: "Once clicked on the notification, the hidden gem will appear as a in app pop-up with minimal information about the hidden gem found.",
-        }
+        },
     ]}
     direction={"row"}
     caption={
@@ -231,7 +265,7 @@ primary goal of our app, which is to foster exploration and build a vibrant comm
         "Once the app is closed, it will send a push notification when a gem matching their preference is nearby. " + 
         "Clicking on the push notification will open the map with a pop-up displaying the selected gem's minimal details."
     }
-  
+
     width={12}
     maxHeight={"400px"}
 >
@@ -260,30 +294,29 @@ hidden gems, enhancing their exploration journey.
         {
             src: newGem,
             alt: "The main map page of the Gem Hunter app showing 7 pinned locations where participants can add new gems.",
+            caption: "Participant can add a new gem to the map"
         },
         {
             src: addGem,
             alt: "Participants can add information on a new gem, including its name, location, description, tags, rating, and photos.",  
+            caption: "Add information to the gem like creating a new name, description, tags, etc."
         },
         {
             src: upgradeTier,
             alt: "After adding a new gem, participants see a pop-up indicating a new tier unlocked and a thank you message showing points earned.",
+            caption: "Once gem is added, they will receive a pop-up with information about tier upgrades and how many points earned."
         },
         {
             src: mapUpgrade,
             alt: "The main map page now displays 14 gems, up from the original 7, due to the new tier unlock.",
+            caption: "The map will display new hidden gems once a new tier has been unlocked."
         },
         {
             src: profile,
             alt: "Participants can check their profile to view their progression toward the next tier unlock.",
+            caption: "You check your profile to view your progression towards the next tier."
         },
     ]}
-    caption={
-        "Participants adds new gem, including details like name, location, description, tags, ratings, " +
-        "and photos. Upon adding a new gem, they receive a pop-up notification of a new tier unlock and earn " +
-        "reputation points. The main map page then updates from displaying 7 gems to 14. Participants can also track " +
-        "their progression towards the next tier unlock through their profile."
-    }
     width={12}
     maxHeight={"400px"}
 >
@@ -335,7 +368,6 @@ to share their hidden gems? This insight helped us identify the need to create c
         },
     ]}
     direction={"row"}
-
     width={6}
     maxHeight={"400px"}
 >
