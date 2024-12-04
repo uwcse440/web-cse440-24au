@@ -226,10 +226,11 @@ primary goal of our app, which is to foster exploration and build a vibrant comm
     ]}
     direction={"row"}
     caption={
-        "Once you select your wanted radius and preferences, the app will notify you if there is a hidden gem nearby. " +
-        "You are able to click on the push notification to open up the in-app map with the pop-up giving minimal information about the hidden gem." +
-        "You are able to expand the pop-up to retrieve additional information on the hidden gem."
+        "Set preferred radius and preferences participant wishes to be notified about. " +
+        "Once the app is closed, it will send a push notification when a gem matching their preference is nearby. " + 
+        "Clicking on the push notification will open the map with a pop-up displaying the selected gem's minimal details."
     }
+  
     width={12}
     maxHeight={"400px"}
 >
@@ -277,7 +278,10 @@ hidden gems, enhancing their exploration journey.
         },  
     ]}
     caption={
-        "Showcasing Gem Hunter app with key features such as adding new gems, user rewards, and progression tracking."
+        "Participants adds new gem, including details like name, location, description, tags, ratings, " +
+        "and photos. Upon adding a new gem, they receive a pop-up notification of a new tier unlock and earn " +
+        "reputation points. The main map page then updates from displaying 7 gems to 14. Participants can also track " +
+        "their progression towards the next tier unlock through their profile."
     }
     width={12}
     maxHeight={"400px"}
@@ -466,7 +470,7 @@ interaction with the app.
 To address this, we reworked the notification system by introducing pop-ups directly within the app. These
 in-app pop-ups inform users of tier upgrades and earned reputation points without needing to exit the app.
 This iteration provided a more seamless and integrated user experience, reducing interruptions and 
-allowing users to stau engaged with the app's current content. By refining the notification system,
+allowing users to stay engaged with the app's current content. By refining the notification system,
 we created a more cohesive interaction flow within the app.
 
 </ProjectImagesBlock>
