@@ -69,6 +69,10 @@ import beforeRatings from "public/images/projects/discoverly/post/beforeRatings.
 import setUp from "public/images/projects/discoverly/post/Setting up.png";
 import beforeNotifs from "public/images/projects/discoverly/post/beforeNotifs.png"
 import beforeImg from "public/images/projects/discoverly/post/before.png";
+import radius from "public/images/projects/discoverly/post/Set Radius Large.png";
+import preferenceImg from "public/images/projects/discoverly/post/Your Preferences.png";
+import pushNotif from "public/images/projects/discoverly/post/Push Notification.png";
+import popupImg from "public/images/projects/discoverly/post/Popup Clicked.png";
 
 
 
@@ -203,20 +207,29 @@ primary goal of our app, which is to foster exploration and build a vibrant comm
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: radius,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
         {
-            src: imagePlaceholder300x600,
+            src: preferenceImg,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
+        {
+            src: pushNotif,
+            alt: "",
+        },
+
+        { 
+            src: popupImg,
+            alt: "",
+        }
     ]}
     direction={"row"}
     caption={
         "This caption is applied to the entire block of images. " +
         "See that it spans across the area of the images."
     }
-    width={6}
+    width={12}
     maxHeight={"400px"}
 >
 
@@ -227,27 +240,7 @@ primary goal of our app, which is to foster exploration and build a vibrant comm
 
 </ProjectImagesBlock>
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
-    maxHeight={"400px"}
->
 
-    Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-    quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-    velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-    Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-    felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-    turpis egestas integer. Auctor augue mauris augue neque gravida.
-
-</ProjectImageBlock>
 
 ### Sharing Personal Experiences of Hidden Gems to Obtain Rewards
 
