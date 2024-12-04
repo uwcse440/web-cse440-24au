@@ -208,35 +208,38 @@ primary goal of our app, which is to foster exploration and build a vibrant comm
     images={[
         {
             src: radius,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Adjust the radius to where you would like to get notified for the hidden gem.",
         },
         {
             src: preferenceImg,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Select your preferences of what hidden gems you would like to find.",
         },
         {
             src: pushNotif,
-            alt: "",
+            alt: "After closing your phone, you will get a push notification if you're nearby a hidden gem in your interest.",
         },
 
         { 
             src: popupImg,
-            alt: "",
+            alt: "Once clicked on the notification, the hidden gem will appear as a in app pop-up with minimal information about the hidden gem found.",
         }
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Once you select your wanted radius and preferences, the app will notify you if there is a hidden gem nearby. " +
+        "You are able to click on the push notification to open up the in-app map with the pop-up giving minimal information about the hidden gem." +
+        "You are able to expand the pop-up to retrieve additional information on the hidden gem."
     }
     width={12}
     maxHeight={"400px"}
 >
 
-    Participants can use the Gem Hunter app to uncover new attractions added by others.
-    The app's location tracking feature ensures accurate and reliable discovery of these hidden gems.
-    When users enter a designated area, they receive notifications about nearby gems. By contributing
-    with these gems, they can unlock details and accumulate reputation points.
+    Participants are prompted to adjust their radius for nearby gems through an intuitive slider interface,
+    ensuring they receive alerts within their preferred range. They can easily set filters for the types of
+    gems they wish to discover. As users continue exploring within the radius, they receive a push notification
+    about gems that are nearby that meet their criteria from previously. Upon tapping the push notification,
+    they are directed to an interactive map where the pop-up of the hidden gem is displayed. They can expand the
+    pop-up to view more information on the hidden gem, and from there can decide if they would like to visit the hidden gem.
 
 </ProjectImagesBlock>
 
