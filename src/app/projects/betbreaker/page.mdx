@@ -301,14 +301,14 @@ to find any specific defects within our product, revising these issues before an
     maxHeight={"400px"}
 >
 
-From our usability tests, we also learned that the users did not like having the all the information condensed into one space, as it was harder to differentiate between information, and also just to see in general, they asked, ‘why not just make a whole website’.
-We also learned after making our revisions and making a whole website that the friends system needed some modifications, that having a leaderboard among your friends might encourage the wrong behaviors, and also it may discourage from friends participating in mutual accountability if they are at the bottom, additionally having shame buttons next to friends was also too discouraging, and also we needed to make adding friends and messaging friends more straightforward.
-We also learned that the users would want more ways to hold their friends accountable, originally one of the reviewers suggested that we make a system where users can require approval from one of their friends before making a bet, which was then tested and then updated so that the users could have a minimum, so that they would only require approval on bets above a certain amount
+We learned from our Heuristic Evaluators that we needed to expand on some of the ideas that we had in the paper prototype, meaning that some of the information was too condensed in the paper prototype, and needed to be expanded into a full website. 
+We also learned that there was not much user freedom within our paper prototype, for example, we had almost no back buttons, and each tab was hidden within a specific series of subsequent tasks that the user had to complete in the perfect order otherwise they wouldn’t get to the destination.
+We also learned that much of the language that we used was not necessarily friendly to users who aren’t familiar with gambling terminology, and considering how our target audience is novice gamblers, we need to have more user friendly terminology, and/or explanations for what the terminology means.
 
 
 </ProjectImageBlock>
 
-### Heuristic Evaluation
+### Friends Leaderboard Converted to a List
 
 <ProjectImagesBlock
     images={[
@@ -328,10 +328,12 @@ We also learned that the users would want more ways to hold their friends accoun
     maxHeight={"200px"}
 >
 
-We learned from our Heuristic Evaluators that we needed to expand on some of the ideas that we had in the paper prototype, meaning that some of the information was too condensed in the paper prototype, and needed to be expanded into a full website. 
-We also learned that there was not much user freedom within our paper prototype, for example, we had almost no back buttons, and each tab was hidden within a specific series of subsequent tasks that the user had to complete in the perfect order otherwise they wouldn’t get to the destination.
-We also learned that much of the language that we used was not necessarily friendly to users who aren’t familiar with gambling terminology, and considering how our target audience is novice gamblers, we need to have more user friendly terminology, and/or explanations for what the terminology means.
-
+One of the things that we learned from usability testing was that showing our users a leaderboard under certain metrics may convey the wrong idea.
+We had the leaderboard configured so that users could view it by win/loss ratio, net winnings, or minimum losses. By doing this we had hoped to 
+encourage engagement with Betbreaker by utilizing humans competitive nature, but we found that it might encourage users to bet more and more to 
+attempt to get closer to the top of the leaderboard, and that if you were at the bottom of the leaderboard seeing this might unnecessarily 
+shameful the user even if they haven't done anything wrong. To combat this, instead of displaying an leaderboard, we changed it to a "friends" tab
+where users can look at their friends in a non-competitive format, with statuses, and most recent bets displayed.
 
 </ProjectImagesBlock>
 
