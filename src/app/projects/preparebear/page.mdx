@@ -459,10 +459,21 @@ helped identify features and best practice inclusions we overlooked because of o
 
 ### Allowing the User to Control Their Process
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: revisiontree,
+            alt: "Initial design sketch of Pot Pal synthesizing previous information and " +
+            "displaying it on its screen as well as talking about it.",
+            caption: "One revision from this insight, the revision tree handling user backtracking at any point"
+        },
+    ]}
+    direction={"column"}
+    width={6}
+    maxHeight={"400px"}
+>
 
-
-Users should have methods for exiting or changing the current system status when they are
-dissatisifed or are desiring a change. It was mainly from Usability Testing that many inspectors
+It was mainly from Usability Testing that many inspectors
 identified that our dialogue trees as streamlined processes did not allow for much user control
 on when to exit, redo, or navigate in a conversation, and seemed to be guiderailed on a certain 
 path, breaking the "User Control" heuristic. We then added a stop tree to shutdown the bear at
@@ -473,17 +484,7 @@ in full control of their position in the process, but also the system's underlyi
 do this, we redesigned the feedback system to allow users to edit their goals and feedback preferences
 if not satisfied with feedback received.
 
-<ProjectImageBlock
-    image={
-        {
-            src: revisiontree,
-            alt: "Diaglogue tree allowing user to say they want to redo a statement.",
-            caption: "New revision tree applicable to anywhere in process",
-        }}
-    width={12}
-    maxHeight={"400px"}
->
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Making System Status and Processing Visible
 
