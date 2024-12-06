@@ -84,6 +84,7 @@ import friendstab from "public/images/projects/betbreaker/post/friendstab.png";
 import friends7 from "public/images/projects/betbreaker/post/friends7.png";
 import noback from "public/images/projects/betbreaker/post/noback.png";
 import back from "public/images/projects/betbreaker/post/back.png";
+import home from "public/images/projects/betbreaker/post/home.png";
 import leaderboard from "public/images/projects/betbreaker/post/leaderboard.png";
 import socialgambling from "public/images/projects/betbreaker/post/Social-Casino-Games.webp";
 
@@ -139,14 +140,20 @@ import socialgambling from "public/images/projects/betbreaker/post/Social-Casino
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
-<ProjectImageBlock
-    image={{
-        src: figmaoverall,
-        alt: "Figma design"
-    }}
-    caption={
-        "Figma design of all pages - settings, friends, chat, web extension, home, stats, goals."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+        src: home,
+        alt: "homepage",
+        caption: "Betbreaker Homepage"
+        },
+        {
+        src: home,
+        alt: "homepage",
+        caption: "Betbreaker Homepage"
+        }
+    ]}
+    direction={"column"}
     width={6}
     maxHeight={"400px"}
 >
@@ -157,7 +164,7 @@ BetBreaker is a browser extension that activates when users access gambling site
 
 Rather than attempting to eliminate gambling addiction outright, BetBreaker aims to cultivate mindfulness, helping users make informed decisions and develop healthier behaviors in an environment designed to exploit impulsivity.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ## Design Walkthrough
 
