@@ -169,7 +169,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 <ProjectImageBlock
     image={{
         src: neutral,
-        alt: "A picture of a panda stuffed animal looking sad.",
+        alt: "A picture of a panda stuffed animal looking neutral.",
     }}
     caption={
         "Prepare Bear: a sympathetic companion that helps you processs and prepare through speech"
@@ -189,7 +189,15 @@ Prepare Bear is a robotic animal device that communicates with its user through 
 
 ## Design Walkthrough
 
-Talking to the animal will allow a person practical experience speaking about their experiences and gain confidence for a conversation by establishing goals and planning sentences that effectively communicate those goals to another person. It allows users to take control of their emotional needs and the process of preparation in a safe space where a comforting and compassionate companion can support them. The animal will collect information from these conversations and use that and its built-in conversational knowledge to advise effective communication.
+One main task to be accomplished with the help of Prepare Bear is "Evaluating Emotional Needs", finding a path forward
+from intense emotions, by talking through an issue with Prepare Bear and determining if you need to speak to someone, 
+what you need to communicate to them if so, and general emotional processing. The second is "Preparing What You're Going to Say" 
+in a conversation with another person by iteratively workshopping sentences with feedback from Prepare Bear based on goals. 
+These are our focus tasks because we identified from our research two major barriers to communication being the inability 
+to process what you're feeling and lack of concrete preparation.
+
+The way this is designed this system behind the scenes is through multiple dialogue trees that guide the user through
+these conversation paths.
 
 <ProjectImageBlock
     image={{
@@ -198,7 +206,7 @@ Talking to the animal will allow a person practical experience speaking about th
     }}
     direction={"column"}
     caption={
-        "The logic of evalutating feelings"
+        "Dialogue Tree 1: a definition of the path the system takes to gather information, lead the user in processing their emotions, and help make a plan for if they need help"
     }
     width={12}
     maxHeight={"400px"}
@@ -212,7 +220,8 @@ Talking to the animal will allow a person practical experience speaking about th
     }}
     direction={"column"}
     caption={
-        "Logic of preparing a conversation"
+        "Dialogue Tree 2: A definition of the path the system takes to help the user prepare for a conversation, "
+        + "collecting information and goals, then looping through giving feedback on user sentences using the Feedback Generator"
     }
     width={12}
     maxHeight={"400px"}
@@ -222,11 +231,13 @@ Talking to the animal will allow a person practical experience speaking about th
 <ProjectImageBlock
     image={{
         src: feedbacktree,
-        alt: "Logic of feedback between Prepare Bear and User",
+        alt: "Logic of iterative feedback giving",
     }}
     direction={"column"}
     caption={
-        "Logic of feedback between Prepare Bear and User"
+        "Feedback Generator: the logic for generating feedback in Dialogue Tree 2, giving feedback "
+        + "based on user defined goals, and allowing users to critique their feedback and edit their "
+        + "goals so feedback suits their needs"
     }
     width={12}
     maxHeight={"400px"}
