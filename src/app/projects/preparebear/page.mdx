@@ -109,7 +109,8 @@ import research_insight3 from "public/images/projects/preparebear/post/research_
 
 import prototype from "public/images/projects/preparebear/post/prototype.png"
 import revisiontree from "public/images/projects/preparebear/post/revisiontree.png"
-import facialdisplay from "public/images/projects/preparebear/post/facialdisplay.png"
+import facialdisplay1 from "public/images/projects/preparebear/post/facialdisplay_1.png"
+import facialdisplay2 from "public/images/projects/preparebear/post/facialdisplay_2.png"
 
 import neutral from "public/images/projects/preparebear/post/neutral.png"
 
@@ -488,17 +489,23 @@ if not satisfied with feedback received.
 
 ### Making System Status and Processing Visible
 
-<ProjectImageBlock
-    image={
+<ProjectImagesBlock
+    images={[
         {
-            src: facialdisplay,
-            alt: "System for displaying faces description.",
-            caption: "System for displaying faces, including brightness indicating user input and thinking when processsing",
-        }}
-    width={12}
-    maxHeight={"400px"}
+            src: facialdisplay1,
+            alt: "Initial design sketch of Pot Pal synthesizing previous information and " +
+            "displaying it on its screen as well as talking about it.",
+        },
+        {
+            src: facialdisplay2,
+            alt: "Initial design sketch of Pot Pal synthesizing previous information and " +
+            "displaying it on its screen as well as talking about it.",
+        },
+    ]}
+    caption="Facial system revisions aimed at showing user relevant system status, both when receiving input and loading, faces being used to deliver feedback in real time"
+    direction={"column"}
+    width={5}
 >
-</ProjectImageBlock>
 
 What the system is doing and how it is interpreting user's input should be made visible to the
 user in real time or promptly after data collection. Also from Usability Testing, we received
@@ -515,23 +522,25 @@ would benefit from more checkpoints after data collection segments where the col
 is reported back to the user and the user is able to edit errors. We added many checkpoints along our
 dialogue trees in consideration of this, giving users that feedback soon after collection.
 
+</ProjectImagesBlock>
+
+
 ### Suppporting Natural Conversation Diversions
 
-<ProjectImageBlock
-    image={
+<ProjectImagesBlock
+    images={[
         {
-            src: sympathytree,
-            alt: "System for responding to user context.",
-            caption: "New sympathy logic applicable to user context",
-        }}
-    width={12}
-    maxHeight={"400px"}
+            src: questiontree,
+            alt: "Initial design sketch of Pot Pal synthesizing previous information and " +
+            "displaying it on its screen as well as talking about it.",
+        },
+    ]}
+    caption="Question taking tree added to the system, assisting users by handling a variety of useful questions throughout the whole process"
+    direction={"column"}
+    width={5}
 >
-</ProjectImageBlock>
 
-Divergences from the main conversation tree are normal in a user interaction, and should be
-supported, especially in cases where the user experience will benefit from the diversion. This
-insight came mostly from usability testing, where across tests many system breaks occured when
+This insight came mostly from usability testing, where across tests many system breaks occured when
 the user asked questions or made statements that were not anticipated by the dialogue tree. 
 Participant 2 in particular asked many questions for advice and clarification. Participant 3 gave
 the feedback that the current process felt like a systematic interrogation in the way the system
@@ -539,19 +548,10 @@ asked series of questions without interruption. This identified to us that the r
 needed to allow for natural sideroads in conversation, and the user could even benefit from
 divergences in the form of questions.
 
-<ProjectImageBlock
-    image={
-        {
-            src: questiontree,
-            alt: "System for answering questions.",
-            caption: "Logic for when user asks a question to Prepare Bear",
-        }}
-    width={12}
-    maxHeight={"400px"}
->
-</ProjectImageBlock>
- So, we added a question-taking tree to our system, a sympathetic
+So, we added a question-taking tree to our system, a sympathetic
 response system that made the system respond more naturally to user speech in between tree nodes, and
 an error tree handling all other diversions with a reminder of system state and ability to redirect
 if needed. We believe all of these changes improve user experience with improved natural dialogue, 
 offering more user assistance, and handling error cases in defined ways.
+
+</ProjectImagesBlock>
