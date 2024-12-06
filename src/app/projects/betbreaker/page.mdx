@@ -59,6 +59,8 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 import figmaoverall from "public/images/projects/betbreaker/post/figmaoverall.png";
 import originpaper from "public/images/projects/betbreaker/post/neworiginal.png";
 import finalpaper from "public/images/projects/betbreaker/post/newfinalprototype.png";
+import newfinal2 from "public/images/projects/betbreaker/post/newfinal2.png";
+
 import usabilitytesting from "public/images/projects/betbreaker/post/usabilitytesting.png";
 import heuristiceval from "public/images/projects/betbreaker/post/heuristiceval.png";
 import heuristiceval2 from "public/images/projects/betbreaker/post/heuristiceval2.png";
@@ -78,7 +80,11 @@ import friends3 from "public/images/projects/betbreaker/post/friends3.png";
 import friends4 from "public/images/projects/betbreaker/post/friends4.png";
 import friends5 from "public/images/projects/betbreaker/post/friends5.png";
 import friends6 from "public/images/projects/betbreaker/post/friends6.png";
+import friendstab from "public/images/projects/betbreaker/post/friendstab.png";
 import friends7 from "public/images/projects/betbreaker/post/friends7.png";
+import noback from "public/images/projects/betbreaker/post/noback.png";
+import back from "public/images/projects/betbreaker/post/back.png";
+import leaderboard from "public/images/projects/betbreaker/post/leaderboard.png";
 import socialgambling from "public/images/projects/betbreaker/post/Social-Casino-Games.webp";
 
 
@@ -340,15 +346,20 @@ Throughout the usability testing process, we also incorporated heuristic evaluat
 
 ### Back Buttons and Emergency Exits to "Go Back"
 
-<ProjectImageBlock
-    image={{
-        src: usabilitytesting,
+<ProjectImagesBlock
+    images={[
+        {
+        src: noback,
         alt: "issue raised about clutter from usability testing",
-    }}
-    caption={
-        "Issue about clutter raised during usability test, subsequent revision also shown"
-    }
-    width={6}
+        caption: "before"
+        },
+        {
+        src: back,
+        alt: "issue raised about clutter from usability testing",
+        caption: "after"
+        },
+    ]}
+    width={12}
     maxHeight={"400px"}
 >
 
@@ -357,25 +368,25 @@ From our heuristic evaluators, we learned that our paper prototype lacked user f
 To address this, we merged all our work to create a cohesive design that allowed cross-functionality between tasks. Additionally, we added emergency exits and back buttons throughout the interface, ensuring users could navigate more freely and recover from errors easily.
 
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Friends Leaderboard Converted to a List
 
 <ProjectImagesBlock
     images={[
         {
-            src: heuristiceval,
+            src: leaderboard,
             alt: "issue with leaderboard in heuristic evaluations",
-            caption: "Heuristic issue with leaderboard"
+            caption: "Cognitive Issue with Leaderboard"
         },
         {
-            src: heuristiceval2,
+            src: friendstab,
             alt: "issue with back buttons in heuristic evaluations",
-            caption: "Heuristic issue with back buttons"
+            caption: "Resolution in Friends Tab"
         },
     ]}
-    direction={"column"}
-    width={6}
+    direction={"row"}
+    width={12}
     maxHeight={"200px"}
 >
 
@@ -396,12 +407,17 @@ To address this, we replaced the leaderboard with a "Friends" tab. This non-comp
         },
         {
             src: finalpaper,
-            alt: "Paper prototype with full website, web extension, and notifications",
+            alt: "Paper Prototype of Full Website with Stats",
             caption: "Final Paper Prototype"
         },
+        {
+            src: newfinal2,
+            alt: "stats dropdown dropped down",
+            caption: "Final Paper Prototype (2)"
+        }
     ]}
-    direction={"column"}
-    width={6}
+    direction={"row"}
+    width={12}
     maxHeight={"200px"}
 >
 
