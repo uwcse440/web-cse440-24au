@@ -76,6 +76,7 @@ import t24 from "public/images/projects/dawgsense/post/T2-4.png";
 import selectMode from "public/images/projects/dawgsense/post/selectMode.png";
 import designInsight from "public/images/projects/dawgsense/post/design_insight_diagram.png";
 import logo from "public/images/projects/dawgsense/project_thumb.png";
+import overviewPaper from "public/images/projects/dawgsense/post/overview_paper.png";
 
 # DawgSense
 <ProjectSubtitle>Your Dog's Emotions, Understood and Managed</ProjectSubtitle>
@@ -380,40 +381,51 @@ This insight shaped our focus on combining immediate support with long-term lear
 tools, such as VR scenarios for reflective practice, helping owners understand their
 dog's triggers and manage interactions proactively.
 
-### Behavioral and Health Patterns Are Interconnected
+### Behavioral Triggers are Complex and Often Overlooked
 
-Our research uncovered that behavioral issues are often linked to health conditions.
-For example, the veterinarian explained that “aggressive behavior may stem from pain
-or hormonal imbalances,” emphasizing the need for tools that integrate behavioral and
-health monitoring. This led us to design features that correlate physiological changes
-with behavior, enabling owners to identify and address potential health concerns alongside
-emotional triggers.
+During interviews with dog owners, a recurring theme emerged: many struggled to identify
+the triggers behind their dog's behaviors, especially during stressful situations. One
+participant shared, "Sometimes I don’t notice the exact moment my dog starts feeling
+overwhelmed, it happens so subtly." This insight highlighted the need for tools that
+not only provide behavioral cues but also connect these behaviors to the surrounding
+environment, such as noise or movement nearby. This learning pushed us to prioritize
+real-time contextual support as a central aspect of the design.
 
 ## Iterative Design and Key Insights
 
-Our iterative design process for the Dawgsense MR project began with a clear focus on
-enhancing the interaction between dog owners and their pets through advanced AR and
-VR technologies. Initially, we engaged in paper prototyping and user story mapping
-to outline the essential functionalities—real-time crisis response and behavioral
-practice in controlled environments. This phase was instrumental in defining the dual
-focus tasks of the project: enabling in-the-moment crisis management and facilitating
-behavioral training through replayable scenarios.
+<ProjectImageBlock
+    image={{
+        src: overviewPaper,
+        alt: "design overview."
+    }}
+    caption={
+        "Overview of the paper prototype."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+Our iterative design process started with low-fidelity sketches to establish basic design concepts
+based on our design research. We evolved these sketches into storyboards and task
+walkthrough to convey context and illustrate interactions, focusing on two primary
+tasks: supporting in-the-moment crisis responses and practicing behavioral
+interpretation. This lead to the development of paper prototypes and heuristic evaluations, where we
+identified crucial usability issues such as the absence of a back/undo button and
+confusing visual indicators.
+</ProjectImageBlock>
+Usability testing with target users further revealed
+problems like insufficient feedback, complex task flows, and unclear navigation,
+which informed our refinement in the digital mockup stage, such as refining a cohesive
+and functional interface for both focused tasks and adding a 'History & Reports'
+interface to enhance user reflective learning.
 
-Following the initial prototyping, we conducted a series of inspections and usability
-tests to refine our design. These evaluations provided crucial insights into user needs
-and system performance, particularly highlighting the importance of seamless integration
-between the AR and VR components. The feedback led to significant mockup changes, including
-the integration of functionalities into a single workflow and the introduction of a
-comprehensive "History & Reports" section to enhance user engagement and experience.
+Reflecting on this process, the iterative nature of our design approach—from
+prototyping to user testing—was instrumental in uncovering and addressing user
+needs effectively, making the final design both intuitive and effective. Each cycle
+provided critical insights that directly shaped subsequent revisions, culminating in
+a design that helps dog owners manage and understand their pets' behavior both in
+real-time and through reflective learning.
 
-Throughout this process, each iteration brought us closer to a design that not only
-fill the hole in existing designs but also resonated with the user’s daily experiences
-and challenges. The iterative cycles of designing, testing, and refining allowed us to
-adapt our approach dynamically, ensuring that the final product—Dawgsense MR—was both
-intuitive and effective in helping dog owners manage and understand their pets'
-behavior in real-time and through reflective practice.
-
-### Streamlining Interaction Complexity to Enhance User Efficiency and Engagement
+### Streamlining Interaction Complexity Enhances User Efficiency and Engagement
 
 <ProjectImagesBlock
     images={[
@@ -440,8 +452,8 @@ Skills.” This separation not only introduced unnecessary complexity but also d
 the fluidity of the user experience. Observations during usability testing underscored
 the confusion caused by this disjointed interaction model.
 
-To address these issues, our digital mockup underwent a redesign. We consolidated both
-key functionalities into a unified interface on the homepage. This strategic integration
+To address these issues, we consolidated both key functionalities into a unified 'Home'
+interface in our digital mockup. This integration
 allows users to seamlessly toggle between monitoring in real-time and practicing their
 skills without the need to switch contexts. This design refinement simplifies user
 interactions and enhances the accessibility of the application, fostering a more cohesive
@@ -453,7 +465,7 @@ and user-friendliness of our application.
 
 </ProjectImagesBlock>
 
-### Empowering User Experience with Intuitive Navigation and Responsive Controls
+### Intuitive Navigation and Responsive Controls Empowers User Experience
 
 <ProjectImagesBlock
     images={[
@@ -475,8 +487,7 @@ and user-friendliness of our application.
     maxHeight={"400px"}
 >
 
-Our heuristic evaluations and usability tests highlighted significant gaps in our
-prototype’s user interface, particularly the lack of essential navigation and
+Our heuristic evaluations and usability tests highlighted the lack of essential navigation and
 directive elements. For instance, one user accessed the main interface but struggled
 to navigate to the next frame due to the lack of clear prompts. In another case, a
 user wanted to switch from practicing how to identify potential 'barking' warnings to
@@ -490,7 +501,7 @@ To address these issues, we enhanced the design to include backward navigation
 and undo functionalities, thereby empowering users with the flexibility to
 easily navigate back or terminate actions when they change their minds.
 Additionally, we introduced a 'continue' button on the homepage and a new
-section detailing various operational modes. These enhancements make the progression
+interface detailing various operational modes. These enhancements make the progression
 steps and available functionalities clear, significantly improving the user experience
 by ensuring consistency and simplifying navigation. Together, these improvements have
 transformed our design into a more user-friendly and responsive tool, enhancing both its
@@ -498,7 +509,7 @@ functional integrity and user satisfaction.
 
 </ProjectImagesBlock>
 
-### Instructive Feedback in Enhancing User Mastery and Long-term Learning
+### Instructive Feedback is the Key to Enhance User Progress and Long-term Learning
 
 <ProjectImagesBlock
     images={[
@@ -520,17 +531,18 @@ functional integrity and user satisfaction.
     maxHeight={"300px"}
 >
 
-The usability tests revealed that the feedback provided to users after completing practice sessions
-was vague and lacked actionable insights. Users were presented with generic messages like "Good Job!"
-without any detailed breakdown of their performance or suggestions for improvement. This lack of meaningful
-feedback violated the Visibility of System Status and Feedback heuristic, as it failed to communicate to
-users how well they performed and how they could improve. The absence of actionable information hindered
-the learning process, leaving users unable to gauge their progress or identify areas requiring attention.
+The usability tests revealed that the initial feedback mechanisms after completing practice sessions were
+too general and lacked detailed, actionable feedback. Users received generic messages like 'Good Job!'
+without a comprehensive breakdown of their performance or suggestions for improvement. This deficiency
+in meaningful feedback violated the Visibility of System Status and Feedback heuristic, as it failed to
+communicate to users how well they performed and how they could improve. The absence of actionable information
+hindered the learning process, leaving users unable to gauge their progress or identify areas requiring attention.
 
 To address this shortfall, the feedback mechanism was overhauled to include both positive reinforcement
-and constructive suggestions. Now, post-training feedback not only praises correct actions, such as
-identifying early signs of anxiety with statements like "You identified early signs of anxiety correctly.
-Great work!", but it also points out specific areas for improvement, such as "Focus on noticing tail
-movements earlier," accompanied by actionable advice.
+and constructive suggestions. In the revised design, post-training feedback not only praises correct actions,
+such as identifying early signs of anxiety with statements like 'You identified early signs of anxiety correctly.
+Great work!', but it also highlights specific areas for improvement, such as 'Focus on noticing tail movements earlier,'
+accompanied by actionable advice. This enhancement is highly effective for long-term learning.
+
 
 </ProjectImagesBlock>
