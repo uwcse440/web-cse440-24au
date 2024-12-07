@@ -301,12 +301,14 @@ whether its a good bet to make or not.
 ## Design Research and Key Insights
 
 The impact we aimed to achieve with our research was to gain a deeper understanding of the psychological drivers and decision-making processes of habitual online gamblers. Specifically, we sought to explore why individuals choose to bet larger sums after "bad bets" and act impulsively when certain bets feel like “locks.” Additionally, we aimed to uncover insights into whether habitual gamblers have a subconscious mental financial limit while gambling—or lack thereof. To achieve this, we conducted our research primarily through interviews with college students who regularly engage in online gambling. These interviews were conversational, allowing participants to freely express their thoughts while following a flexible script. This approach ensured consistency across interviews while encouraging participants to elaborate on their personal experiences and motivations.
+We decided to use interviews as our design research method, because it allowed us to get important quantitative data about what the participants
+would look for in our system.
 
-Our interview participants included the following individuals:
+Our interview participants included the following individuals, who we picked because of their gambling history:
 
 Bob: A 20-year-old college student who regularly engages in online sports betting. He frequently places bets on his college football team and professional sports leagues such as MLB, NBA, and NFL. Bob primarily uses Bovada as his betting platform but also utilizes friends who act as bookies, providing alternative betting options.
 
-Evan: A 23-year-old college student who engages in online sports betting bi-weekly. He uses multiple betting sites and places parlays on various sporting events.
+Even: A 23-year-old college student who engages in online sports betting bi-weekly. He uses multiple betting sites and places parlays on various sporting events.
 
 Ben: A 19-year-old college student who regularly places NFL bets on DraftKings and FanDuel. In addition to NFL bets, he places NBA parlays during the regular season.
 
@@ -314,9 +316,18 @@ These individuals were selected for our interviews because college students make
 
 ### Counterproductivity in Mental Tracking:
 
+When discussing financial habits, our interviewees from our design research expressed reluctance about the idea
+of physically tracking their data in spreadsheets or other mediums. When asked why they
+refrain from tracking their finances, one interviewee mentioned that they prefer to keep
+a mental note of their win/loss data, citing the lack of an easy way to report finances
+across multiple betting platforms as a significant barrier. Although they fully acknowledged
+the importance of tracking this information, the interviewees shared that relying on mental
+tracking has previously led to unnecessary debt.
 
-
-When discussing financial habits, our interviewees expressed reluctance about the idea of physically tracking their data in spreadsheets or other mediums. When asked why they refrain from tracking their finances, one interviewee mentioned that they prefer to keep a mental note of their win/loss data, citing the lack of an easy way to report finances across multiple betting platforms as a significant barrier. Although they fully acknowledged the importance of tracking this information, the interviewees shared that relying on mental tracking has previously led to unnecessary debt.
+In our final design, we worked through this by allowing users a direct sync between their
+finances and the betbreaker website. Though not pictured in our final design, a major 
+part of our thinking for financial tracking on the implementation side involved the use
+of a virtual credit card, so that users wouldn't have to track it all themselves.
 
 ### A Lack of Financial Responsibility:
 
@@ -332,7 +343,16 @@ When discussing financial habits, our interviewees expressed reluctance about th
     maxHeight={"400px"}
 >
 
-In the interviews conducted with all three college students, a clear trend emerged: a significant lack of financial literacy, particularly in managing money responsibly while gambling. For example, one interviewee mentioned struggling to control his gambling when offered “bonus free bets” on NFL Sundays, as this incentivizes him to gamble more in hopes of winning a larger prize pool. Additionally, some interviewees admitted to struggling with managing their finances during losing streaks. Two interviewees shared experiences of spending hours trying to recover their losses, only to end up losing more money than they could afford.
+In the interviews conducted with all three college students, a clear trend emerged: 
+a significant lack of financial literacy, particularly in managing money responsibly
+while gambling. For example, one interviewee mentioned struggling to control his gambling when offered “bonus free bets” on NFL Sundays, as this incentivizes him to gamble more in hopes of winning a larger prize pool. 
+Additionally, some interviewees admitted to struggling with managing their finances during losing streaks. Two interviewees shared experiences of spending hours trying to recover their losses, only to end up losing more money than they could afford.
+
+In our design research this information led to the notification system design
+that we developed in the early stages of ideation. We used it to display the concept of 
+giving users cautionary nudges and informing them throughout their process. This design was fleshed out, 
+and eventually we merged it with the web extension idea, such that the web extension would
+also be able to send notifications to the users.
 
 </ProjectImageBlock>
 
@@ -351,14 +371,21 @@ In the interviews conducted with all three college students, a clear trend emerg
 
 Interviewees also stated that their gambling behaviors are heavily and consistently influenced by peer pressure, as their friends also participate in sports betting. Being part of a gambling community appeared to encourage some interviewees to frequently discuss their gambling strategies in an effort to better understand sports trends. It was critical for us as researchers to recognize that online gamblers are often persuaded by their peers to place certain bets, depending on whether the odds seem favorable. By aligning our design with this insight, we gained a deeper understanding of how to address the smaller-scale "bet or no bet" decision-making process.
 
+In our design process, we worked with this isight and we originally developed a friend leaderboard to encourage friendly
+competitive engagement. We eventually changed this to a general friends tab to remove any 
+potential competitive shaming that might occur.
+
 </ProjectImageBlock>
 ## Iterative Design and Key Insights
 
 Our iterative design process was multifaceted and involved significant revisions and changes as we progressed. We began with design research interviews with participants from our target demographic. The purpose of these interviews was to identify the type of overall design users would find comfortable and to determine which functionalities should or should not be included in the system.
 
-Next, we created multiple designs to align with the participants’ desired functionalities. After brainstorming and deliberate selection, we decided on the web extension design. Usability tests were then conducted on this design, during which participants were informed about the tasks we wanted them to complete and the context in which they would use our application. These tests prompted revisions after each round, culminating in a refined final paper prototype.
+Next, we created multiple designs to align with the participants’ desired functionalities. After brainstorming and deliberate selection, we decided on the web extension design. Usability tests via contextual inquiry were then conducted on this design, during which participants were informed about the tasks we wanted them to complete and the context in which they would use our application. These tests prompted revisions after each round, culminating in a refined final paper prototype.
 
 Throughout the usability testing process, we also incorporated heuristic evaluations from our peers to identify specific defects in our product. These evaluations helped us address and revise issues both before and after the usability tests, ensuring a more polished final design.
+
+To start, we created numerous paper sketches, eventually narrowing down and merging designs, fleshing each of them out more, and removing some of the ideas, and eventually deciding on a design before making a prototype. The paper prototype was modified throughout all our usability tests, and after testing, turned into a digital mockup on Figma, which was then also edited via inspection.
+
 
 ### Back Buttons and Emergency Exits to "Go Back"
 
@@ -406,7 +433,7 @@ To address this, we merged all our work to create a cohesive design that allowed
     maxHeight={"200px"}
 >
 
-One insight we gained from usability testing was that displaying a leaderboard under certain metrics could convey the wrong message. Initially, we configured the leaderboard to show rankings based on metrics such as win/loss ratio, net winnings, or minimal losses. The intent was to encourage engagement with BetBreaker by leveraging users' competitive nature. However, we discovered that this approach might inadvertently motivate users to bet more in an attempt to climb the leaderboard. Additionally, users at the bottom of the leaderboard could feel unnecessarily shamed, even if they hadn’t done anything wrong.
+One insight we gained from contextual inquiry usability testing was that displaying a leaderboard under certain metrics could convey the wrong message. Initially, we configured the leaderboard to show rankings based on metrics such as win/loss ratio, net winnings, or minimal losses. The intent was to encourage engagement with BetBreaker by leveraging users' competitive nature. However, we discovered that this approach might inadvertently motivate users to bet more in an attempt to climb the leaderboard. Additionally, users at the bottom of the leaderboard could feel unnecessarily shamed, even if they hadn’t done anything wrong.
 
 To address this, we replaced the leaderboard with a "Friends" tab. This non-competitive feature allows users to view their friends’ statuses and most recent bets in a supportive, neutral format, avoiding the pitfalls of competition and promoting a more positive user experience.
 
@@ -443,4 +470,6 @@ and revise and repeat until we felt comfortable with the design on paper. From t
 keeping all of our information within the context of a web extesnion cluttered all the text, and that we needed to expand 
 to a full website alongside the web extension, just because all the writing on the paper was simply so small. To revise this, we decided to 
 migrate the information that was cluttered into a website where there is much more screen/paper space to utilize to display information to the user.
+While this was a major change to our overall design, the content of our functionalities and tasks
+was not changed much, but just generally made more visible, now that it was in the frame of an entire website.
 </ProjectImagesBlock>
