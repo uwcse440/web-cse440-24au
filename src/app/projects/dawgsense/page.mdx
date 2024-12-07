@@ -74,8 +74,11 @@ import t22 from "public/images/projects/dawgsense/post/T2-2.png";
 import t23 from "public/images/projects/dawgsense/post/T2-3.png";
 import t24 from "public/images/projects/dawgsense/post/T2-4.png";
 import selectMode from "public/images/projects/dawgsense/post/selectMode.png";
+import designInsight from "public/images/projects/dawgsense/post/design_insight_diagram.png";
+import logo from "public/images/projects/dawgsense/project_thumb.png";
 
 # DawgSense
+<ProjectSubtitle>Your Dog's Emotions, Understood and Managed</ProjectSubtitle>
 
 ## Team
 
@@ -128,15 +131,11 @@ import selectMode from "public/images/projects/dawgsense/post/selectMode.png";
 
 <ProjectImageBlock
     image={{
-        src: overview,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: logo,
+        alt: "design overview."
     }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
-    maxHeight={"400px"}
+    width={4}
+    maxHeight={"200px"}
 >
 
 Many dog owners struggle to effectively respond to and manage their dogs' emotional and reactive
@@ -145,16 +144,13 @@ behaving abnormally in unfamiliar environments. This issue stems from a lack of 
 interpret and address their dogs’ behaviors in real-time, compounded by limited opportunities to
 learn from these situations to prevent recurrence. This creates challenges in both immediate intervention
 and long-term behavior management, leaving owners feeling unprepared and dogs more anxious.
-
+</ProjectImageBlock>
 Our approach emphasizes equipping dog owners with the means to respond to immediate behavioral
 challenges and reflect on those scenarios for deeper understanding. By focusing on both the reactive
 and proactive aspects of behavior management, the design ensures that owners are not only able to
 address a situation as it arises but also gain insights into potential triggers and alternatives
 for future prevention. This dual focus helps build owners’ confidence in navigating complex
 behavioral challenges while fostering a stronger connection with their pets.
-
-
-</ProjectImageBlock>
 
 ## Design Walkthrough
 
@@ -350,6 +346,19 @@ view of the challenges faced. Interviews were chosen to allow flexibility in exp
 topics like emotional cues, behavioral management, and training needs. This approach
  provided actionable insights that informed our design decisions.
 
+ <ProjectImageBlock
+    image={{
+        src: designInsight,
+        alt: "Select Mode to start the system",
+    }}
+    caption={
+        "Categorize dog training and owner support tools by effort level and impact, ranging from low-effort community features to high-effort, high-impact training tools."
+    }
+    width={12}
+    maxHeight={"1000px"}
+>
+</ProjectImageBlock>
+
 ### Real-time Emotional Monitoring Enables Timely Interventions
 
 Interviews revealed that dog owners struggle to recognize early signs of stress or
@@ -363,24 +372,6 @@ before they escalate.
 
 ### Owner Education Requires Long-Term, Multidimensional Approaches
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
-
 Participants emphasized the need for comprehensive education on dog behavior. While
 training videos and apps provide some support, they lack personalized guidance
 tailored to specific dogs and contexts. The veterinarian noted that “dog owners
@@ -388,8 +379,6 @@ need to learn how to manage their own emotions” since stress can transfer to p
 This insight shaped our focus on combining immediate support with long-term learning
 tools, such as VR scenarios for reflective practice, helping owners understand their
 dog's triggers and manage interactions proactively.
-
-</ProjectImagesBlock>
 
 ### Behavioral and Health Patterns Are Interconnected
 
@@ -424,103 +413,111 @@ adapt our approach dynamically, ensuring that the final product—Dawgsense MR�
 intuitive and effective in helping dog owners manage and understand their pets'
 behavior in real-time and through reflective practice.
 
-### Integrating Two Functionality Workflow into One Homepage
+### Streamlining Interaction Complexity to Enhance User Efficiency and Engagement
 
 <ProjectImagesBlock
     images={[
         {
             src: insights1before,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Post-practice feedback screen where the vague 'Good Job' message is " +
-                     "displayed without any additional description or summary after the practice."
+            alt: "separate interface",
+            caption: "Before: Two separate homepages were designed for each focused task. "
         },
         {
             src: insights1after,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            alt: "integrated homepage",
+            caption: "After: Both focused tasks have been integrated into a single homepage. " +
+                     "Users can now choose between the two modes."
         },
     ]}
     direction={"column"}
     width={6}
-    maxHeight={"200px"}
+    maxHeight={"350px"}
 >
 
-In our initial paper prototype, users were required to navigate between two distinct
-interfaces to accomplish both of our focused tasks, which significantly disrupted the
-user experience. This separation not only created confusion but also introduced unnecessary
-complexity into the usability of the system. Observations during usability testing indicated
-that this disjointed interaction model led to frustration and a decreased likelihood of task
-completion.
+In our initial paper prototype, users were required to use two distinct interfaces
+to accomplish each of our focused tasks—“Monitor in Real-Time” and “Practice Your
+Skills.” This separation not only introduced unnecessary complexity but also disrupted
+the fluidity of the user experience. Observations during usability testing underscored
+the confusion caused by this disjointed interaction model.
 
-To address these issues, our digital mockup underwent a redesign where both key
-functionalities—"Monitor in Real-Time" and "Practice Your Skills"—were integrated
-on the homepage. This strategic integration fosters a more cohesive and streamlined
-user experience by eliminating the need to switch contexts. Users can now seamlessly
-choose between immediate assistance or proactive skill enhancement without navigating
-away from the main interface. This design choice not only simplifies the navigation
-process but also enhances the overall accessibility of the application. It allows
-for a more personalized and intuitive interaction with the system, significantly
-improving user engagement and satisfaction. By consolidating these features, the
-redesigned interface directly supports users in efficiently achieving their intended
-goals, thereby enhancing the practical utility and user-friendliness of our application.
+To address these issues, our digital mockup underwent a redesign. We consolidated both
+key functionalities into a unified interface on the homepage. This strategic integration
+allows users to seamlessly toggle between monitoring in real-time and practicing their
+skills without the need to switch contexts. This design refinement simplifies user
+interactions and enhances the accessibility of the application, fostering a more cohesive
+and streamlined experience. It encourages more intuitive and personalized engagement
+with the system, significantly boosting user satisfaction and efficiency. By streamlining
+these features into a single interface, the revised design effectively supports users in
+achieving their intended goals with greater ease, thereby elevating the overall utility
+and user-friendliness of our application.
 
 </ProjectImagesBlock>
 
-### Improving Navigation and Enhancing User Control
+### Empowering User Experience with Intuitive Navigation and Responsive Controls
 
 <ProjectImagesBlock
     images={[
         {
             src: insights2before,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "interface without exit/back button.",
         },
         {
             src: insights2after,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "interface with exit/back button.",
         },
     ]}
     direction={"row"}
     caption={
-        "Before the change, there is no button to go back or exit. " +
-        "See that it spans across the area of the images."
+        "Before the change, there is no button to go back or exit. A Back Button was added to allow users to navigate " +
+        ", and an Exit Button was added to provide a clear way to leave the session entirely."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-During heuristic evaluations, it was evident that the prototype lacked an undo or exit button
-after the users made a selection like "Shaking" or "Dog Bark." This omission restricted users
-from backing out or changing their decisions after initiating a process, leading to increased
-frustration and a lack of sense of control. The absence of these buttons violated the User Control
-and Freedom heuristic, as users were unable to navigate freely or correct mistakes within the interface.
+Our heuristic evaluations and usability tests highlighted significant gaps in our
+prototype’s user interface, particularly the lack of essential navigation and
+directive elements. For instance, one user accessed the main interface but struggled
+to navigate to the next frame due to the lack of clear prompts. In another case, a
+user wanted to switch from practicing how to identify potential 'barking' warnings to
+'shaking' warnings. However, due to the absence of functionality for modifying selections,
+the user was unable to make any changes once a choice had been made. This
+oversight limited users' ability to perform, adjust, or revert actions, leading to
+frustration and a diminished sense of control over the application, contrary to the
+User Control and Freedom heuristic.
 
-To address this, we added a clear 'Back/Exit' button in the revised design. This enhancement
-not only aligns with the User Control and Freedom heuristic but also significantly improves the
-overall user interface by making navigation more intuitive and user-friendly.
+To address these issues, we enhanced the design to include backward navigation
+and undo functionalities, thereby empowering users with the flexibility to
+easily navigate back or terminate actions when they change their minds.
+Additionally, we introduced a 'continue' button on the homepage and a new
+section detailing various operational modes. These enhancements make the progression
+steps and available functionalities clear, significantly improving the user experience
+by ensuring consistency and simplifying navigation. Together, these improvements have
+transformed our design into a more user-friendly and responsive tool, enhancing both its
+functional integrity and user satisfaction.
 
 </ProjectImagesBlock>
 
-### Adding Detailed Feedback and Performance Summary
+### Instructive Feedback in Enhancing User Mastery and Long-term Learning
 
 <ProjectImagesBlock
     images={[
         {
             src: insights3before,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Post-practice feedback screen where the vague 'Good Job' message is " +
-                     "displayed without any additional description or summary after the practice."
+            alt: "interface with vague post-practice summary",
+            caption: "Before: Post-practice feedback screen displaying the vague 'Good Job' message " +
+                     "without any additional description or summary."
         },
         {
             src: insights3after,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            alt: "interface with detailed post-practice summary",
+            caption: "After: Post-practice feedback screen displaying the detailed " +
+                     "summary of user performance and further improvements."
         },
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    direction={"row"}
+    width={12}
+    maxHeight={"300px"}
 >
 
 The usability tests revealed that the feedback provided to users after completing practice sessions

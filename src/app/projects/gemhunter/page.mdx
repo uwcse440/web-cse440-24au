@@ -36,7 +36,6 @@ import {ProjectImageBlock} from "@/components/project/ProjectImageBlock";
 import {ProjectImagesBlock} from "@/components/project/ProjectImagesBlock";
 import {ProjectSubtitle} from "@/components/project/ProjectSubtitle";
 import {ProjectTeamGallery} from "@/components/project/ProjectTeamGallery";
-import {CenteredTitleBlock} from "@/app/projects/gemhunter/TitleCenteredBlock.tsx";
 
 {/* Image Imports
   *
@@ -48,12 +47,12 @@ import {CenteredTitleBlock} from "@/app/projects/gemhunter/TitleCenteredBlock.ts
   * - If an import is not working, double-check that you have the correct file extension.
 */}
 
-import lauren from "public/images/projects/gemhunter/team/lauren.png";
+
+import lauren from "public/images/projects/gemhunter/team/lauren.jpg";
 import huan from "public/images/projects/gemhunter/team/huan.jpg";
-import denny from "public/images/projects/gemhunter/team/denny.png";
+import denny from "public/images/projects/gemhunter/team/denny.jpg";
 import aria from "public/images/projects/gemhunter/team/aria.jpg";
 import sahil from "public/images/projects/gemhunter/team/sahil.jpg";
-
 import mainPage from "public/images/projects/gemhunter/post/Main Page.png";
 import mockUp from "public/images/projects/gemhunter/post/MockUp.png";
 import newGem from "public/images/projects/gemhunter/post/New Gem Added.png";
@@ -62,7 +61,6 @@ import upgradeTier from "public/images/projects/gemhunter/post/Tier Upgrade.png"
 import mapUpgrade from "public/images/projects/gemhunter/post/Map Upgrade.png";
 import profile from "public/images/projects/gemhunter/post/Profile.png";
 import beforeRatings from "public/images/projects/gemhunter/post/beforeRatings.png";
-import setUp from "public/images/projects/gemhunter/post/Setting up.png";
 import beforeNotifs from "public/images/projects/gemhunter/post/beforeNotifs.png"
 import beforeImg from "public/images/projects/gemhunter/post/before.png";
 import radius from "public/images/projects/gemhunter/post/Set Radius Large.png";
@@ -71,9 +69,6 @@ import pushNotif from "public/images/projects/gemhunter/post/Push Notification.p
 import popupImg from "public/images/projects/gemhunter/post/Popup Clicked.png";
 import socialmedia from "public/images/projects/gemhunter/post/socialmedia.png";
 import clutterImg from "public/images/projects/gemhunter/post/clutter.png";
-import AddingNewGem from "public/images/projects/gemhunter/post/Adding New Hidden Gem.png";
-import ContributeHiddenGem from "public/images/projects/gemhunter/post/Contributing to Hidden Gem.png";
-import ProfileView from "public/images/projects/gemhunter/post/Profile View.png";
 
 
 # Gem Hunter
@@ -90,23 +85,23 @@ import ProfileView from "public/images/projects/gemhunter/post/Profile View.png"
 
 <ProjectTeamGallery members={[
     {
-        name: ["Aria", "Tang"],
+        name: ["Aria Tang", "she/her"],
         photo: aria,
     },
     {
-        name: ["Denny", "Zhou"],
+        name: ["Denny Zhou", "he/him"],
         photo: denny,
     },
     {
-        name: ["Huan", "Nguyen"],
+        name: ["Huan Nguyen", "she/her"],
         photo: huan,
     },
     {
-        name: ["Lauren", "Tra"],
+        name: ["Lauren Tra", "she/her"],
         photo: lauren,
     },
     {
-        name: ["Sahil", "Puri"],
+        name: ["Sahil Puri", "he/him"],
         photo: sahil,
     },
 ]}/>
@@ -130,21 +125,14 @@ import ProfileView from "public/images/projects/gemhunter/post/Profile View.png"
 */}
 
 
-{/* A CenteredTitleBlock displays text centered.
-* - The title is configured through properties on the opening `CenteredTitleBlock` tag.
-* - The fontSize is configured through properties on the opening `CenteredTitleBlock` tag.
-* - The margin is configured through properties on the opening `CenteredTitleBlock` tag.
-*
-* See Examples Below How to Use
-*/}
-
 <ProjectImageBlock
     image={{
         src: mainPage,
         alt: "The main map page of Gem Hunter displaying various pinned hidden gems and user navigation options.",
+        caption: "Gem Hunter's main pages to discover new gems."
     }}
     width={6}
-    maxHeight={500}
+    maxHeight={450}
 >
 
     Discovering unique and memorable experiences should not be a challenge, yet many existing platforms fail to meet the
@@ -161,78 +149,24 @@ import ProfileView from "public/images/projects/gemhunter/post/Profile View.png"
 
 </ProjectImageBlock>
 
-## Resulting Design
-
-<CenteredTitleBlock title={"Design Mockup Overview"} fontSize={20}></CenteredTitleBlock>
+## Design Mockup Overview
 
 <ProjectImageBlock
     image={{
         src: mockUp,
-        alt: "Overview of the Gem Hunter app mockup showing the main interface, key features, and user flow."
+        alt: "Overview of the Gem Hunter app mockup showing the main interface, key features, and user flow.",
+        caption: "Overview of the Gem Hunter digital mockup showing the main interface, key features, and user flow."
     }}
     width={20}
     maxHeight={"2000px"}
->
-</ProjectImageBlock>
-
-<CenteredTitleBlock title={"Design Prototype"} fontSize={20}></CenteredTitleBlock>
-
-#### Configuring Personal Setting/Interest
-<ProjectImageBlock
-    image={{
-        src:setUp,
-        alt: "Image of how to configure personal settings/interest",
-        caption: "Showcasing overview on how to configure personal settings/interests."
-    }}
-    width={20}
-    maxHeight={"2000px"}
->
-
-</ProjectImageBlock>
-
-#### Adding New Hidden Gem
-<ProjectImageBlock
-    image={{
-        src:AddingNewGem,
-        alt: "Image of how to add a new hidden gem",
-        caption: "Showcasing overview on how to add a new hidden gem."
-    }}
-    width={20}
-    maxHeight={"2000px"}
->
-</ProjectImageBlock>
-
-#### Contributing to Hidden Gem
-
-<ProjectImageBlock
-    image={{
-        src:ContributeHiddenGem,
-        alt: "Image of how to contribute to a hidden gem.",
-        caption: "Showcasing overview on how to contribute to a hidden gem."
-    }}
-    width={20}
-    maxHeight={"2000px"}
->
-</ProjectImageBlock>
-
-#### Profile View
-
-<ProjectImageBlock
-    image={{
-        src:ProfileView,
-        alt: "Image of the Profile.",
-        caption: "Showcasing overview of the Profile View."
-    }}
-    width={10}
-    maxHeight={"500px"}
 >
 </ProjectImageBlock>
 
 ## Design Walkthrough
 
 In our mobile application Gem Hunter, we focus on enhancing user engagement and interaction through two key
-features. First, we refine the location tracking functionality to ensure precise and reliable discovery of 
-hidden gems, allowing participants to unlock new attractions added by others. Second, we developed a 
+features. First, we refine the location tracking functionality to ensure precise and reliable discovery of
+hidden gems, allowing participants to unlock new attractions added by others. Second, we developed a
 reputation points system that rewards users for their contributions and discoveries, motivating them
 to explore further and engage more deeply with the app. These features are vital as they directly support the
 primary goal of our app, which is to foster exploration and build a vibrant community around discovering hidden gems.
@@ -255,10 +189,10 @@ primary goal of our app, which is to foster exploration and build a vibrant comm
             alt: "After closing your phone, you will get a push notification if you're nearby a hidden gem in your interest.",
             caption: "After closing the app, you will get a push notification of a nearby gem in your interest."
         },
-        { 
+        {
             src: popupImg,
-            alt: "Once clicked on the notification, the hidden gem will appear as a in app pop-up with minimal information about the hidden gem found.",
-            caption: "Once clicked on the notification, the hidden gem will appear an in app pop-up with minimal information on it."
+            alt: "Once the notification is clicked, the hidden gem will appear as an in app pop-up with minimal information about the hidden gem found.",
+            caption: "Once the notification is clicked, the hidden gem will appear an in app pop-up with minimal information on it."
         },
     ]}
     direction={"row"}
@@ -294,7 +228,7 @@ hidden gems, enhancing their exploration journey.
         },
         {
             src: addGem,
-            alt: "Participants can add information on a new gem, including its name, location, description, tags, rating, and photos.",  
+            alt: "Participants can add information on a new gem, including its name, location, description, tags, rating, and photos.",
             caption: "Add information to the gem like creating a new name, description, tags, etc."
         },
         {
@@ -310,7 +244,7 @@ hidden gems, enhancing their exploration journey.
         {
             src: profile,
             alt: "Participants can check their profile to view their progression toward the next tier unlock.",
-            caption: "You check your profile to view your progression towards the next tier."
+            caption: "Participants can check their profile to view their progression towards the next tier."
         },
     ]}
     width={12}
@@ -331,9 +265,9 @@ State who are likely familiar with the state's hidden gems. There are numerous w
 including social media, community boards, and news outlets. Given the variety of methods available, targeting this
 demographic of locals offered valuable insights for designing an app tailored to a social media-driven world.
 
-We designed a 14-question survey to uncover how people discover hidden gems, complemented by interviews with a 
+We designed a 14-question survey to uncover how people discover hidden gems, complemented by interviews with a
 Californian native living temporarily in Washington and a native Washington resident. Both the survey and interviews
-covered participants' demographic information, discovery habits, favorite hidden gems, and their methods for finding 
+covered participants' demographic information, discovery habits, favorite hidden gems, and their methods for finding
 these spots. We distributed the survey across multiple platforms, including friends, local community groups, and community
 boards for Washingtonians. The diverse range of responses we received enabled us to gather a variety of perspectives
 and identify patterns in exploration behaviors. Through our interviews, we aimed to gain deeper insights into how both
@@ -345,9 +279,10 @@ non-natives and natives of Washington State discover their own hidden gems.
 Of the people who responded to the survey, a quarter of them mentioned having a strong sense of ownership over the hidden
 gems they find, which can lead to exclusivity behavior. Participants expressed a desire to keep unique locations to themselves,
 fearing that sharing might lead to overcrowding. One participant noted, "When I find a great lowkey spot, I tend to not want to
-share it with anyone except close friends and family." This insight posed a significant challenge as to how do we encourage users 
-to share their hidden gems? This insight helped us identify the need to create compelling incentives for users to share their discoveries.
+share it with anyone except close friends and family." This insight posed a new question: how do we encourage users
+to share their hidden gems? This insight helped us identify the need to include compelling incentives for users to share their discoveries.
 
+### Diverse Discovery Methods and Preferences
 
 <ProjectImagesBlock
     images={[
@@ -366,32 +301,31 @@ to share their hidden gems? This insight helped us identify the need to create c
     width={6}
     maxHeight={"400px"}
 >
-### Diverse Discovery Methods and Preferences
 
-Our research revealed that discovering new hidden gems can be challenging due to the multitude of 
-available methods. Participants utilize social media, community boards, and word of mouth, among other means,
-to find hidden gems. This diversity became evident when we asked about their major concerns and preferences 
-regarding apps with similar functionalities, like Yelp. While Yelp is a reliable platform for discovering popular 
-restaurants and reading detailed reviews, it tends to focus on well-known establishments, making it less effective for 
-users seeking unique, lesser-known experiences or hidden gems that go beyond mainstream recommendations. 
-The overwhelming feedback indicated
-that users wanted a seamless and efficient way to discover hidden gems without additional effort. Based on this insight,
-we recognized the importance of creating something intuitive that accommodates various discovery methods and integrates
-seamlessly into users' routines.
+    Our research revealed that discovering new hidden gems can be challenging due to the multitude of
+    available methods. Participants utilize social media, community boards, and word of mouth, among other means,
+    to find hidden gems. This diversity became evident when we asked about their major concerns and preferences
+    regarding apps with similar functionalities, like Yelp. While Yelp is a reliable platform for discovering popular
+    restaurants and reading detailed reviews, it tends to focus on well-known establishments, making it less effective for
+    users seeking unique, lesser-known experiences or hidden gems that go beyond mainstream recommendations.
+    The overwhelming feedback indicated
+    that users wanted a seamless and efficient way to discover hidden gems without additional effort. Based on this insight,
+    we recognized the importance of creating something intuitive that accommodates various discovery methods and integrates
+    seamlessly into users' routines.
 
 </ProjectImagesBlock>
 
 ### Spontaneous Discoveries
 
-One of the key takeaways from our design research was that many participants discovered fun and memorable 
-experiences through spontaneous explorations. These moments often left the deepest impressions because they 
-felt authentic and unforced, arising naturally from being in the right place at the right time. In one of the 
-interviews, the participant highlighted some of their most fun experiences that were not even planned. This highlights 
-the importance of designing a platform for spontaneous discoveries, which supports and enhances spontaneous discovery 
-without over-planning or dictating the journey. By creating an environment where users can confidently wander, stumble 
-upon hidden gems, and create unplanned memories, Gem Hunter fosters a sense of adventure and connection to the 
-moment—qualities that are often lost in rigidly structured travel experiences. This emphasis on spontaneity 
-ensures the app aligns with the innate curiosity and joy of discovery that makes exploration so rewarding. 
+One of the key takeaways from our design research was that many participants discovered fun and memorable
+experiences through spontaneous explorations. These moments often left the deepest impressions because they
+felt authentic and unforced, arising naturally from being in the right place at the right time. In one of the
+interviews, the participant highlighted some of their most fun experiences that were not even planned. This highlights
+the importance of designing a platform for spontaneous discoveries, which supports and enhances spontaneous discovery
+without over-planning or dictating the journey. By creating an environment where users can confidently wander, stumble
+upon hidden gems, and create unplanned memories, Gem Hunter fosters a sense of adventure and connection to the
+moment—qualities that are often lost in rigidly structured travel experiences. This emphasis on spontaneity
+ensures the app aligns with the innate curiosity and joy of discovery that makes exploration so rewarding.
 
 ## Iterative Design and Key Insights
 
@@ -410,11 +344,11 @@ a rating system for informed decision-making, enhancing navigation for better us
 providing clear feedback response mechanisms. Participants seemed to appreciate the ability to make
 informed decisions based on a comprehensive rating system, improved navigation features that empowered them
 with greater control and ease of use, and a clear and consistent feedback response mechanism that ensured
-they receiived timely feedback. These enhancements, directly informed by participant feedback, played a pivotal
+they received timely feedback. These enhancements, directly informed by participant feedback, played a pivotal
 role in evolving our design to meet user needs more effectively.
 
 
-### Implementation of Rating System for Informed Decision Making
+### Implementation of a Rating System for Informed Decision Making
 
 <ProjectImageBlock
     image={{
@@ -429,17 +363,17 @@ role in evolving our design to meet user needs more effectively.
     maxHeight={"400px"}
 >
 
-Introducing a rating system where users can rate the hidden gems they have discovered significantly
-enhances the decision-making process. Initially, our app lacked mechanisms for users to evaluate and
-share their opinions on hidden gems. During the paper prototyping phase, we discovered that participants
-need a reliable way to gauge the quality of hidden gems. One participant from our usability test stated,
-"Being able to see ratings and reviews from other users could really help decide on which places would be
-worth visiting."
+    Introducing a rating system where users can rate the hidden gems they have discovered significantly
+    enhances the decision-making process. Initially, our app lacked mechanisms for users to evaluate and
+    share their opinions on hidden gems. During the paper prototyping phase, we discovered that participants
+    need a reliable way to gauge the quality of hidden gems. One participant from our usability test stated,
+    "Being able to see ratings and reviews from other users could really help decide on which places would be
+    worth visiting."
 
-We integrated a straight forward rating interface in the digital mockup. Users could easily rate gems
-on a scale, allowing filtering options that allowed users to sort and read through positive or negative
-reviews. This iteration was crucial in providing users with valuable community feedback and empowered
-them to make informed choices.
+    We integrated a straight forward rating interface in the digital mockup. Users could easily rate gems
+    on a scale, allowing filtering options that allowed users to sort and read through positive or negative
+    reviews. This iteration was crucial in providing users with valuable community feedback and empowered
+    them to make informed choices.
 
 </ProjectImageBlock>
 
@@ -464,17 +398,17 @@ them to make informed choices.
 >
 
 
-A lack of clear navigation options, such as back buttons and submit buttons, significantly impacted
-user experience. During our tests, we observed that users struggled with navigating the app due to
-the absence of essential buttons. Specific evidence from these evaluations highlighted that users
-often felt lost when they could not return to the main map page after filtering preferences or 
-finalizing their contributions without a submit button. One participant noted, "I felt lost on how to
-submit my contribution to the Ravenna Chest, theres no way for me to exit either."
+    A lack of clear navigation options, such as back buttons and submit buttons, significantly impacted
+    user experience. During our tests, we observed that users struggled with navigating the app due to
+    the absence of essential buttons. Specific evidence from these evaluations highlighted that users
+    often felt lost when they could not return to the main map page after filtering preferences or
+    finalizing their contributions without a submit button. One participant noted, "I felt lost on how to
+    submit my contribution to the Ravenna Chest, theres no way for me to exit either."
 
-Based on the feedback from our first usability testing, we introduced back buttons on each screen
-necessary to facilitate easier navigation and a submit button on relevant screens. These adjustments
-significantly improved usability and user satisfaction, enabling smoother interactions and better user
-control, ultimately enhancing the overall experience as well.
+    Based on the feedback from our first usability testing, we introduced back buttons on each screen
+    necessary to facilitate easier navigation and a submit button on relevant screens. These adjustments
+    significantly improved usability and user satisfaction, enabling smoother interactions and better user
+    control, ultimately enhancing the overall experience as well.
 
 
 
@@ -494,7 +428,7 @@ control, ultimately enhancing the overall experience as well.
             src: upgradeTier,
             alt: "Mock up image provides notifications integrated as pop-ups within the app to notify users of tier upgrades and earned reputation points.",
             caption: "The mockup has integrated notifications as pop-ups within the app to notify users " +
-            "of their tier upgrades and earned reputation points." 
+                "of their tier upgrades and earned reputation points."
         },
     ]}
     direction={"row"}
@@ -502,16 +436,16 @@ control, ultimately enhancing the overall experience as well.
     maxHeight={"400px"}
 >
 
-Unnecessary notifications in the phone's notification center hindered user experience, prompting
-the need for a more smooth transition. During our usability tests, it became evident how inconvenient
-it is to receive notifications through the phone's notification center rather than as a pop-ups within
-the app itself. We also noticed it does not provide a smooth transition and causes disrupts in the users
-interaction with the app.
+    Unnecessary notifications in the phone's notification center hindered user experience, prompting
+    the need for a more smooth transition. During our usability tests, it became evident how inconvenient
+    it is to receive notifications through the phone's notification center rather than as a pop-ups within
+    the app itself. We also noticed it does not provide a smooth transition and causes disrupts in the users
+    interaction with the app.
 
-To address this, we reworked the notification system by introducing pop-ups directly within the app. These
-in-app pop-ups inform users of tier upgrades and earned reputation points without needing to exit the app.
-This iteration provided a more seamless and integrated user experience, reducing interruptions and 
-allowing users to stay engaged with the app's current content. By refining the notification system,
-we created a more cohesive interaction flow within the app.
+    To address this, we reworked the notification system by introducing pop-ups directly within the app. These
+    in-app pop-ups inform users of tier upgrades and earned reputation points without needing to exit the app.
+    This iteration provided a more seamless and integrated user experience, reducing interruptions and
+    allowing users to stay engaged with the app's current content. By refining the notification system,
+    we created a more cohesive interaction flow within the app.
 
 </ProjectImagesBlock>
