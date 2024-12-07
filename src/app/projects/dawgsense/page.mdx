@@ -76,6 +76,7 @@ import t24 from "public/images/projects/dawgsense/post/T2-4.png";
 import selectMode from "public/images/projects/dawgsense/post/selectMode.png";
 import designInsight from "public/images/projects/dawgsense/post/design_insight_diagram.png";
 import logo from "public/images/projects/dawgsense/project_thumb.png";
+import overviewPaper from "public/images/projects/dawgsense/post/overview_paper.png";
 
 # DawgSense
 <ProjectSubtitle>Your Dog's Emotions, Understood and Managed</ProjectSubtitle>
@@ -392,27 +393,37 @@ real-time contextual support as a central aspect of the design.
 
 ## Iterative Design and Key Insights
 
-Our iterative design process began with low-fidelity sketches, focusing clearly
-on helping dog owners enhance their understanding and management of their dogs
-through advanced AR and VR technologies. Based on our sketches, we created
-storyboards to convey context and detail about interactions with our design and
-to explore two primary tasks: supporting in-the-moment crisis responses using AR
-and practicing behavioral interpretation using VR technologies.
+<ProjectImageBlock
+    image={{
+        src: overviewPaper,
+        alt: "design overview."
+    }}
+    caption={
+        "Overview of the paper prototype."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+Our iterative design process started with low-fidelity sketches to establish basic design concepts
+based on our design research. We evolved these sketches into storyboards and task
+walkthrough to convey context and illustrate interactions, focusing on two primary
+tasks: supporting in-the-moment crisis responses and practicing behavioral
+interpretation. This lead to the development of paper prototypes and heuristic evaluations, where we
+identified crucial usability issues such as the absence of a back/undo button and
+confusing visual indicators.
+</ProjectImageBlock>
+Usability testing with target users further revealed
+problems like insufficient feedback, complex task flows, and unclear navigation,
+which informed our refinement in the digital mockup stage, such as refining a cohesive
+and functional interface for both focused tasks and adding a 'History & Reports'
+interface to enhance user reflective learning.
 
-With our task walkthroughs, we developed our paper prototypes. Following the paper
-prototyping, we conducted a series of heuristic evaluations to refine our design.
-The two main issues identified were the missing back/undo button and confusing visual
-indicators. Subsequently, usability testing with target users highlighted issues
-such as the lack of detailed feedback, the complex interface flow between tasks, and
-unclear directive/navigation flow, etc. These insights were incorporated into the
-creation of a digital mockup, resulting in the integration of functionalities into a
-cohesive and functional interface for both focus tasks and the introduction of a
-comprehensive 'History & Reports' section to enhance user engagement and reflective
-learning.
-
-The iterative cycles of designing, testing, and refining ensured that the final design
-is both intuitive and effective, helping dog owners manage and understand their pets'
-behavior in real-time and through reflective learning.
+Reflecting on this process, the iterative nature of our design approach—from
+prototyping to user testing—was instrumental in uncovering and addressing user
+needs effectively, making the final design both intuitive and effective. Each cycle
+provided critical insights that directly shaped subsequent revisions, culminating in
+a design that helps dog owners manage and understand their pets' behavior both in
+real-time and through reflective learning.
 
 ### Streamlining Interaction Complexity to Enhance User Efficiency and Engagement
 
@@ -476,8 +487,7 @@ and user-friendliness of our application.
     maxHeight={"400px"}
 >
 
-Our heuristic evaluations and usability tests highlighted significant gaps in our
-prototype’s user interface, particularly the lack of essential navigation and
+Our heuristic evaluations and usability tests highlighted the lack of essential navigation and
 directive elements. For instance, one user accessed the main interface but struggled
 to navigate to the next frame due to the lack of clear prompts. In another case, a
 user wanted to switch from practicing how to identify potential 'barking' warnings to
