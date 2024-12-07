@@ -57,8 +57,10 @@ import imagePlaceholder400x400 from "public/images/projects/template/post/400x40
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 import figmaoverall from "public/images/projects/betbreaker/post/figmaoverall.png";
-import originpaper from "public/images/projects/betbreaker/post/originalpaperprototype.png";
-import finalpaper from "public/images/projects/betbreaker/post/finalpaperprototype.png";
+import originpaper from "public/images/projects/betbreaker/post/neworiginal.png";
+import finalpaper from "public/images/projects/betbreaker/post/newfinalprototype.png";
+import newfinal2 from "public/images/projects/betbreaker/post/newfinal2.png";
+
 import usabilitytesting from "public/images/projects/betbreaker/post/usabilitytesting.png";
 import heuristiceval from "public/images/projects/betbreaker/post/heuristiceval.png";
 import heuristiceval2 from "public/images/projects/betbreaker/post/heuristiceval2.png";
@@ -68,7 +70,28 @@ import mutual3 from "public/images/projects/betbreaker/post/mutual3.png";
 import financial1 from "public/images/projects/betbreaker/post/financial1.png";
 import financial2 from "public/images/projects/betbreaker/post/financial2.png";
 import draftkings from "public/images/projects/betbreaker/post/DraftKingsNBALobby.jpg";
-import socialgambling from "public/images/projects/betbreaker/post/socialgambling.jpg";
+import finance1 from "public/images/projects/betbreaker/post/finance1.png";
+import finance2 from "public/images/projects/betbreaker/post/finance2.png";
+import finance3 from "public/images/projects/betbreaker/post/finance3.png";
+import finance4 from "public/images/projects/betbreaker/post/finance4.png";
+import friends1 from "public/images/projects/betbreaker/post/friends1.png";
+import friends2 from "public/images/projects/betbreaker/post/friends2.png";
+import friends3 from "public/images/projects/betbreaker/post/friends3.png";
+import friends4 from "public/images/projects/betbreaker/post/friends4.png";
+import friends5 from "public/images/projects/betbreaker/post/friends5.png";
+import friends6 from "public/images/projects/betbreaker/post/friends6.png";
+import friendstab from "public/images/projects/betbreaker/post/friendstab.png";
+import friends7 from "public/images/projects/betbreaker/post/friends7.png";
+import noback from "public/images/projects/betbreaker/post/noback.png";
+import back from "public/images/projects/betbreaker/post/back.png";
+import home from "public/images/projects/betbreaker/post/home.png";
+import leaderboard from "public/images/projects/betbreaker/post/leaderboard.png";
+import socialgambling from "public/images/projects/betbreaker/post/Social-Casino-Games.webp";
+import virtcard from "public/images/projects/betbreaker/post/virtcard.webp";
+import sadgambler from "public/images/projects/betbreaker/post/sadgambler.jpg";
+
+
+
 
 
 # BetBreaker
@@ -120,222 +143,318 @@ import socialgambling from "public/images/projects/betbreaker/post/socialgamblin
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
-<ProjectImageBlock
-    image={{
-        src: figmaoverall,
-        alt: "Figma design"
-    }}
-    caption={
-        "Figma design of all pages - settings, friends, chat, web extension, home, stats, goals."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+        src: sadgambler,
+        alt: "homepage",
+        caption: "Lack of transparency in gambling websites can lead to emotional issues."
+        },
+        {
+        src: home,
+        alt: "homepage",
+        caption: "Betbreaker Homepage"
+        }
+    ]}
+    direction={"column"}
     width={6}
     maxHeight={"400px"}
 >
 
-Our design problem centers on the potent combination of accessibility, appeal, and addiction potential within online gambling platforms, especially for college students. Statistics show that this demographic is three times more likely to develop gambling addictions compared to other U.S. adults, highlighting a critical vulnerability. Despite the prevalence of gambling among young adults, many gamblers lack easy access to tools that help them visualize and understand their personal gambling behaviors and trends over time. Without this self-awareness, it’s difficult for individuals to identify and curb potentially harmful patterns.
-Additionally, gambling sites often employ sophisticated, predatory tactics—such as tailored advertisements, reward structures, and endless play options—that actively encourage extended engagement and spending, exacerbating the risk of addiction. These tactics foster an environment where people are subtly drawn into gambling as a habit, making it increasingly difficult to moderate or quit without external support. Addressing this issue requires a design that empowers gamblers with accessible, meaningful insights into their own behaviors, helping them make informed decisions and avoid the pitfalls of addiction in an environment designed to captivate.
+Online gambling platforms are highly accessible, appealing, and addictive—especially for college students, who are three times more likely to develop gambling addictions than other U.S. adults. Many young gamblers lack tools to visualize and understand their betting habits, making it harder to recognize harmful patterns. Meanwhile, gambling sites leverage predatory tactics like personalized ads, rewards, and endless play options, encouraging extended engagement and spending. This environment fosters addiction, making moderation or quitting challenging without external support.
 
+BetBreaker is a browser extension that activates when users access gambling sites, offering a discreet but impactful way to track and manage their betting habits. It provides real-time insights into personalized spending limits, betting trends, and risk analysis through clear visualizations. To promote responsible gambling, BetBreaker incorporates a peer accountability system where users approve each other’s bets, fostering mutual support and financial transparency.
 
-BetBreaker is a popup screen web extension that appears on internet browsers when a user opens gambling sites on their laptop or pc. This pop-up screen will not always be visible, but will track and display the user’s decision making habits, such as actions that impact their own personalized spending limits, daily/weekly/monthly/yearly betting figures, and the user’s risk and odds per bet placed. In addition to helping users responsibly track their finances through easily digestible visualizations of their betting statistics, BetBreaker’s design intends to promote mutual accountability with peers while gambling. By integrating a supportive community-based system to deter financial irresponsibility and impulsivity, namely through approving one another’s bets before being placed, we intend to reinforce users with awareness and transparency of their financial and behavioral habits such that they are aided in knowing when to walk away from the vice of gambling. BetBreaker essentially aims to step away from the issue of curbing gambling addiction outright, and rather instill mindfulness behavior in its users.
-</ProjectImageBlock>
+Rather than attempting to eliminate gambling addiction outright, BetBreaker aims to cultivate mindfulness, helping users make informed decisions and develop healthier behaviors in an environment designed to exploit impulsivity.
+
+</ProjectImagesBlock>
 
 ## Design Walkthrough
 
-The focus tasks that we decided to move forward with are mutual accountability with friends and track financial responsibility. The task of mutual accountability with friends encompasses multiple different methods of holding your friends accountable. We wanted to put in place systems where gambling friends can hold eachother accountable, and in doing so, keep themselves accountable. We want to allow users to be transparent with their habits to hold themselves and their friends accountable to promote healthy gambling habits.
-Being able to track financial responsibility was also another important task we wanted users to be able to complete. Unlike gambling websites, we want betbreaker to be fully transparent and informative about users spending and statistics.
+The focus tasks we decided to move forward with include "mutual accountability with friends" and "tracking financial responsibility". Our task of mutual accountability with friends encapsulates various methods and mechanisms to hold friends accountable for their betting decisions. By implementing a system of financial and habitual transparency, where community members can approve/deny one another's online bets prior to them being placed, as well as viewing each other's betting histories, our findings have shown that this has perpetuated healthier behaviors and deterred impulsivity amongst our participants.
+ 
+In terms of our focus task of tracking financial responsibility, our intentions are for BetBreaker to be informative and show full transparency about the spending habits and financial statistics of its users, such that they can make more informed gambling decisions and not incur debt beyond their pre-existing online budgets.
 
 ### Track Financial Responsibility
 
-<ProjectImageBlock
-    image={{
-        src: financial1,
-        alt: "bebreaker website stats",
-    }}
-    caption={
-        "Betbreaker allows users to see their stats and limits at a glance within the extension, and more info within the website"
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Betbreaker intends to demystify to the user how their money is being spent, and educate them along the way. Within budget and statistics tracking, the user will be informed of what is classified as a “good” or “bad” bet statistically by the monetary risk associated with it, with due consideration to their limits and habits. The virtual credit card will be central to the budget tracking aspect, and will give users a more concrete representation of limits. With this easy to access information and helpful breakdowns of both visual and tabular formats, Betbreaker informs users throughout their gambling process to keep them honest.
-
-</ProjectImageBlock>
-
-<ProjectImageBlock
-    image={{
-        src: financial2,
+<ProjectImagesBlock
+    images={[
+        {
+        src: finance1,
+        alt: "BetBreaker website stats",
+        caption: "BetBreaker allows users to see their stats at a glance in the extension."
+        },
+        {
+        src: finance2,
         alt: "specific user stats and individual bet stats",
-    }}
-    caption={
-        "Betbreaker also allows users to look at individual betting stats, as well as their own history."
-        }
-    width={6}
+        caption: "Users can view their tabular and visual stats."
+        },
+    ]}
+    direction={"row"}
+    width={12}
     maxHeight={"400px"}
 >
 
-We also allow users to view their own account history within Betbreaker if they choose. For example, if a user is attempting to create a budget, they can look at weekly or monthly breakdowns of their spending within betbreaker and even specific bets that may be a spending sink, and use this information to better inform their decisions.
+As a novice online gambler, one may feel inclined to place financially irresponsible bets, solely based on how lucky and favorable they seem to the bettor. Our design research has shown us that this behavior is perpetuated by a lack of understanding of financial limits, as well as a disregard for the immediate monetary risk associated with high-danger bets. Considering that risky bets are commonly placed during a lapse of judgment over one's finances, BetBreaker aims to address this issue. By providing users with concrete representations of their limits, while also presenting easily digestible financial breakdowns in both graphical and tabular formats, BetBreaker intends to keep users informed throughout their gambling process and mitigate risk. 
+</ProjectImagesBlock>
 
-</ProjectImageBlock>
+<ProjectImagesBlock
+    images={[
+        {
+        src: finance3,
+        alt: "BetBreaker website stats",
+        caption: "BetBreaker also allows users to look at individual betting stats, as well as their own history."
+        },
+        {
+        src: finance4,
+        alt: "specific user stats and individual bet stats",
+        caption: "Users can see more general stats on their account page."
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+
+We also allow users to view their account history within BetBreaker if they choose. For example, if a user is attempting to create a budget, they can review weekly, monthly or yearly breakdowns of their spending, including specific bets that may be significant spending sinks. Users can then use this information to make more informed decisions regarding whether or not it would be intelligent to continue to gamble and wager their remaining budget.
+
+</ProjectImagesBlock>
 
 ### Mutual Accountability with Friends
 
-<ProjectImageBlock
-    image={{
-        src: mutual1,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "Users can request approval on certain bets anonymously or directly. Also, users may vote on other users bets anonymously or directly."
-    }
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+        src: friends1,
+        alt: "An interface where users can request approval on bets, either anonymously or directly, with options for voting.",
+        caption: "Users can view their friends statuses and most recent bets from the Friends tab."
+        },
+        {
+        src: friends6,
+        alt: "An interface displaying detailed information about other users' bets, helping users make informed decisions.",
+        caption: "Users can view more info in their friends' profiles."
+        },
+
+    ]}
+    direction={"row"}
+    width={12}
     maxHeight={"400px"}
 >
 
-We chose to focus on allowing users to hold accountability with their peers regarding their gambling habits. We intend to focus on this task to boost mindfulness in a way that may help users their curb gambling temptations before they transpire into a larger issue at hand.
+Within the context of online gambling, accountability is a major issue, as you can do it without showing your face, and within the privacy of your 
+own home, so if the gambler would like, nobody would have to know about the depth of their habits. To alleviate this issue, BetBreaker leverages 
+a social system to keep groups of friends accountable. For the task of keeping friends accountable, participants from our usability and design
+research tests remarked that being able to communicate with a friend and view their history and statistics would allow them to keep their friends
+and themselves accountable, with the knowledge that their friends may do the same for them. From inspection based testing, the suggestion of having 
+a bet approval system was also accepted as a means to bolster mutual accountability.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
-<ProjectImageBlock
-    image={{
-        src: mutual2,
+<ProjectImagesBlock
+    images={[
+        {
+        src: friends2,
         alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "Users can view more information on other users bets to better inform their decision"
-    }
-    width={6}
+        caption: "Friend's Betting History Screen"
+        },
+        {
+        src: friends3,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+        caption: "Bet Approval Request Screen"
+        },
+
+    ]}
+    direction={"row"}
+    width={12}
     maxHeight={"400px"}
 >
 
-Rather than focusing on the behemoth of gambling addiction, it appears that holding one another socially accountable of gambling tendencies may prove to be more effective than constant educational reinforcement before placing bets. Coupled with betting limits, users may find it less appealing to gamble impulsively if they know their peers will check in on their spending habits and loss data (and vice-versa).
+One of the parts of this task for the users is being able to view other user's profiles in BetBreaker and view their histories.
+By navigating to the Friends tab and selecting the friend that the user would like to check up on, the user is directed to the
+friend's account page, where they can view their friend's visual stats at a glance and can view more concrete data on their 
+history by viewing their friend's full tabular history.
 
-</ProjectImageBlock>
+Additionally, users can require certain bets (eg. expensive ones, or ones that exceed their limit) to require approval from their friends.
+They may send these approval requests directly to their friends, or have them posted to an anonymous board for their friends to decide 
+whether its a good bet to make or not.
+</ProjectImagesBlock>
 
-<ProjectImageBlock
-    image={{
-        src: mutual3,
+<ProjectImagesBlock
+    images={[
+        {
+        src: friends5,
         alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "Users can check in on all their public friends' gambling habits, and check in with them through messaging."
-    }
-    width={6}
+        caption: "Users can send bet approval request directly to friends."
+        },
+        {
+        src: friends4,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+        caption: "Users can also vote anonymously on friends' bet approvals."
+        },
+    ]}
+    direction={"row"}
+    width={12}
     maxHeight={"400px"}
 >
-
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 
 ## Design Research and Key Insights
 
-The impact we intended to have with our research was to largely understand the psychological drivers and decision making processes of habitual online gamblers, such as why individuals choose to bet larger sums after "bad bets" and act on impulse when certain bets feel like “locks”. We also aimed to gain a deeper insight of how habitual gamblers have a subconscious mental financial limit while gambling (or lack thereof). As such, we conducted our research primarily by interviewing college students who regularly engage in online gambling. These interviews were conversational, allowing participants to express their thoughts freely while following a flexible script. This helped maintain consistency across interviews while also encouraging participants to elaborate on their personal experiences and motivations.
- 
-Our interview participants included the following individuals:
- 
-Bob: a 20-year-old college student who regularly engages in online sports betting. He frequently place bets on his own college football team but also bets on professional sports leagues like MLB, NBA, and NFL. This student primarily uses Bovada as his betting platform, though he also has friends who are bookies, providing them with alternative betting avenues.
- 
-Even: a 23-year-old college student who engages with online sports betting bi-weekly. He utilizes multiple betting sites and places parlays on different sporting events.
- 
-Ben: a 19-year-old college student who regularly places NFL bets on Draftkings and Fanduel. In addition to placing NFL bets, he places NBA parlays during the regular season.
- 
-These individuals were chosen to participate in our interviews, considering that college students make up a large majority of online gambling platform user bases. Given that our interviewees regularly participate in online betting, we believe that they were critical in helping us achieve our larger goal of understanding gambling psychological factors, and how we could further design BetBreaker to cater to the needs of college students themselves.
+The impact we aimed to achieve with our research was to gain a deeper understanding of the psychological drivers and decision-making processes of habitual online gamblers. Specifically, we sought to explore why individuals choose to bet larger sums after "bad bets" and act impulsively when certain bets feel like “locks.” Additionally, we aimed to uncover insights into whether habitual gamblers have a subconscious mental financial limit while gambling—or lack thereof. To achieve this, we conducted our research primarily through interviews with college students who regularly engage in online gambling. These interviews were conversational, allowing participants to freely express their thoughts while following a flexible script. This approach ensured consistency across interviews while encouraging participants to elaborate on their personal experiences and motivations.
+We decided to use interviews as our design research method, because it allowed us to get important quantitative data about what the participants
+would look for in our system.
 
-### Counterproductivity in mental tracking:
+Our interview participants included the following individuals, who we picked because of their gambling history:
 
+Bob: A 20-year-old college student who regularly engages in online sports betting. He frequently places bets on his college football team and professional sports leagues such as MLB, NBA, and NFL. Bob primarily uses Bovada as his betting platform but also utilizes friends who act as bookies, providing alternative betting options.
 
-When discussing financial habits, our interviewees showed a sense of reluctancy about the thought of physically tracking their data in spreadsheets or other mediums. When questioned about why they refrain from tracking their finances, one specific interviewee mentioned that they prefer to keep a mental note of their win/loss data, as a lack of ease in reporting their finances across multiple betting platforms presents an issue. Although in full agreement about the necessity of tracking this important information, our interviewees have shared that mentally tracking their finances on a whim has previously resulted in them incurring unneeded debt.
+Even: A 23-year-old college student who engages in online sports betting bi-weekly. He uses multiple betting sites and places parlays on various sporting events.
 
-### A Lack of Financial Responsibility:
+Ben: A 19-year-old college student who regularly places NFL bets on DraftKings and FanDuel. In addition to NFL bets, he places NBA parlays during the regular season.
 
+These individuals were selected for our interviews because college students make up a significant portion of online gambling platform user bases. Since our interviewees regularly participate in online betting, we believe their insights were critical to achieving our goal of understanding the psychological factors behind gambling. This knowledge helped us design BetBreaker to better cater to the needs of college students themselves.
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: draftkings,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Gambling websites often make it intentionally difficult to find spending amounts or habits",
-        },
-        {
-            src: socialgambling,
-            alt: "people gambling",
-            caption: "Gamblers are often influenced by social factors.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
-
-In the conducted interviews with all three college students, there appeared to be a very apparent trend in a clear-cut dissociation with financial literacy, specifically in managing money responsibly when participating in the vice. For example, an interviewee mentioned that he lacks control when he is given “bonus free bets” on NFL Sunday, given that encourages him to gamble more as he would have a higher stake in winning a larger money pool. Some interviewees also seemed to struggle with managing money when trying to win back losses during downward trends, with two interviewees stating that they have experiences spending hours at a time attempting to climb out of a financial hole, only to lose more money than they can afford.
-
-</ProjectImagesBlock>
-
-### Societal Factors Impact Gambling Habits:
-
-Interviewees also stated their gambling behaviors are heavily and constantly influenced by peer pressure, due to their friends also engaging in sports betting. Being part of a gambling community seemed to encourage some interviewees to frequently discuss their gambling strategies, in an attempt to gain a better understanding of sports trends. It was quite critical for us as researchers to also understand that online gamblers are often convinced by their peers to place certain bets, depending on whether or not the odds appear to be in their favor. In helping further align our design with this sentiment, we gained a better understanding of how to attack the smaller scale "bet or no bet" decision making process.
-
-## Iterative Design and Key Insights
-
-Our iterative design process was multifaceted, and involved much revision and changes 
-as we went through the process. First we started with design research interviews with 
-participants within our target demographic. The purpose of these was to try and find out what kind of overall design users would be
-comfortable with, and which functionalities we should or shouldn't implement into the system. We then created multiple designs, to fit 
-the participants' desired functionalities. After brainstorming and intentional selection we decided on the web extension design. 
-We then conducted usability tests on this design informing the participants about the tasks we desire them to complete, and informing them
-of the context in which they are using our application. In doing these tests, we revised our design after each subsequent test, eventually
-coming to a revised final paper prototype. Along the process of conducting usability tests, we also used heuristic evaluations from our peers
-to find any specific defects within our product, revising these issues before and after we conducted the usability tests.
-
-### Usability Testing
+### Counterproductivity in Mental Tracking
 
 <ProjectImageBlock
     image={{
-        src: usabilitytesting,
-        alt: "issue raised about clutter from usability testing",
+        src: virtcard,
+        alt: "virtual card",
     }}
-    caption={
-        "Issue about clutter raised during usability test, subsequent revision also shown"
-    }
+    caption={"Virtual Credit Card"}
+
     width={6}
     maxHeight={"400px"}
 >
 
-From our usability tests, we also learned that the users did not like having the all the information condensed into one space, as it was harder to differentiate between information, and also just to see in general, they asked, ‘why not just make a whole website’.
-We also learned after making our revisions and making a whole website that the friends system needed some modifications, that having a leaderboard among your friends might encourage the wrong behaviors, and also it may discourage from friends participating in mutual accountability if they are at the bottom, additionally having shame buttons next to friends was also too discouraging, and also we needed to make adding friends and messaging friends more straightforward.
-We also learned that the users would want more ways to hold their friends accountable, originally one of the reviewers suggested that we make a system where users can require approval from one of their friends before making a bet, which was then tested and then updated so that the users could have a minimum, so that they would only require approval on bets above a certain amount
+When discussing financial habits, our interviewees from our design research expressed reluctance about the idea
+of physically tracking their data in spreadsheets or other mediums. When asked why they
+refrain from tracking their finances, one interviewee mentioned that they prefer to keep
+a mental note of their win/loss data, citing the lack of an easy way to report finances
+across multiple betting platforms as a significant barrier. Although they fully acknowledged
+the importance of tracking this information, the interviewees shared that relying on mental
+tracking has previously led to unnecessary debt.
 
+In our final design, we worked through this by allowing users a direct sync between their
+finances and the betbreaker website. Though not pictured in our final design, a major 
+part of our thinking for financial tracking on the implementation side involved the use
+of a virtual credit card, so that users wouldn't have to track it all themselves.
 
 </ProjectImageBlock>
 
-### Heuristic Evaluation
+
+### A Lack of Financial Responsibility
+
+
+<ProjectImageBlock
+    image={{
+        src: draftkings,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+    }}
+    caption={"Gambling websites often make it intentionally difficult to find spending amounts or habits."}
+
+    width={6}
+    maxHeight={"400px"}
+>
+
+In the interviews conducted with all three college students, a clear trend emerged: 
+a significant lack of financial literacy, particularly in managing money responsibly
+while gambling. For example, one interviewee mentioned struggling to control his gambling when offered “bonus free bets” on NFL Sundays, as this incentivizes him to gamble more in hopes of winning a larger prize pool. 
+Additionally, some interviewees admitted to struggling with managing their finances during losing streaks. Two interviewees shared experiences of spending hours trying to recover their losses, only to end up losing more money than they could afford.
+
+In our design research this information led to the notification system design
+that we developed in the early stages of ideation. We used it to display the concept of 
+giving users cautionary nudges and informing them throughout their process. This design was fleshed out, 
+and eventually we merged it with the web extension idea, such that the web extension would
+also be able to send notifications to the users.
+
+</ProjectImageBlock>
+
+### Societal Factors Impact Gambling Habits
+
+<ProjectImageBlock
+    image={{
+        src: socialgambling,
+        alt: "people gambling",
+    }}
+    caption={"Gamblers are often influenced by social factors."}
+
+    width={6}
+    maxHeight={"400px"}
+>
+
+Interviewees also stated that their gambling behaviors are heavily and consistently influenced by peer pressure, as their friends also participate in sports betting. Being part of a gambling community appeared to encourage some interviewees to frequently discuss their gambling strategies in an effort to better understand sports trends. It was critical for us as researchers to recognize that online gamblers are often persuaded by their peers to place certain bets, depending on whether the odds seem favorable. By aligning our design with this insight, we gained a deeper understanding of how to address the smaller-scale "bet or no bet" decision-making process.
+
+In our design process, we worked with this isight and we originally developed a friend leaderboard to encourage friendly
+competitive engagement. We eventually changed this to a general friends tab to remove any 
+potential competitive shaming that might occur.
+
+</ProjectImageBlock>
+## Iterative Design and Key Insights
+
+Our iterative design process was multifaceted and involved significant revisions and changes as we progressed. We began with design research interviews with participants from our target demographic. The purpose of these interviews was to identify the type of overall design users would find comfortable and to determine which functionalities should or should not be included in the system.
+
+Next, we created multiple designs to align with the participants’ desired functionalities. After brainstorming and deliberate selection, we decided on the web extension design. Usability tests via contextual inquiry were then conducted on this design, during which participants were informed about the tasks we wanted them to complete and the context in which they would use our application. These tests prompted revisions after each round, culminating in a refined final paper prototype.
+
+Throughout the usability testing process, we also incorporated heuristic evaluations from our peers to identify specific defects in our product. These evaluations helped us address and revise issues both before and after the usability tests, ensuring a more polished final design.
+
+To start, we created numerous paper sketches, eventually narrowing down and merging designs, fleshing each of them out more, and removing some of the ideas, and eventually deciding on a design before making a prototype. The paper prototype was modified throughout all our usability tests, and after testing, turned into a digital mockup on Figma, which was then also edited via inspection.
+
+
+### Back Buttons and Emergency Exits to "Go Back"
 
 <ProjectImagesBlock
     images={[
         {
-            src: heuristiceval,
-            alt: "issue with leaderboard in heuristic evaluations",
-            caption: "Heuristic issue with leaderboard"
+        src: noback,
+        alt: "issue raised about clutter from usability testing",
+        caption: "Before"
         },
         {
-            src: heuristiceval2,
-            alt: "issue with back buttons in heuristic evaluations",
-            caption: "Heuristic issue with back buttons"
+        src: back,
+        alt: "issue raised about clutter from usability testing",
+        caption: "After"
         },
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    width={12}
+    maxHeight={"400px"}
 >
 
-We learned from our Heuristic Evaluators that we needed to expand on some of the ideas that we had in the paper prototype, meaning that some of the information was too condensed in the paper prototype, and needed to be expanded into a full website. 
-We also learned that there was not much user freedom within our paper prototype, for example, we had almost no back buttons, and each tab was hidden within a specific series of subsequent tasks that the user had to complete in the perfect order otherwise they wouldn’t get to the destination.
-We also learned that much of the language that we used was not necessarily friendly to users who aren’t familiar with gambling terminology, and considering how our target audience is novice gamblers, we need to have more user friendly terminology, and/or explanations for what the terminology means.
+From our heuristic evaluators, we learned that our paper prototype lacked user freedom. For example, it had almost no back buttons, and each tab was hidden within a specific sequence of tasks that users had to complete in the exact order to reach their destination. This issue arose partly due to the clutter of the original web extension and partly because the tasks were designed in isolation.
+
+To address this, we merged all our work to create a cohesive design that allowed cross-functionality between tasks. Additionally, we added emergency exits and back buttons throughout the interface, ensuring users could navigate more freely and recover from errors easily.
 
 
 </ProjectImagesBlock>
 
-### Paper Prototyping
+### Friends Leaderboard Converted to a List
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: leaderboard,
+            alt: "issue with leaderboard in heuristic evaluations",
+            caption: "Cognitive Issue with Leaderboard"
+        },
+        {
+            src: friendstab,
+            alt: "issue with back buttons in heuristic evaluations",
+            caption: "Resolution in Friends Tab"
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"200px"}
+>
+
+One insight we gained from contextual inquiry usability testing was that displaying a leaderboard under certain metrics could convey the wrong message. Initially, we configured the leaderboard to show rankings based on metrics such as win/loss ratio, net winnings, or minimal losses. The intent was to encourage engagement with BetBreaker by leveraging users' competitive nature. However, we discovered that this approach might inadvertently motivate users to bet more in an attempt to climb the leaderboard. Additionally, users at the bottom of the leaderboard could feel unnecessarily shamed, even if they hadn’t done anything wrong.
+
+To address this, we replaced the leaderboard with a "Friends" tab. This non-competitive feature allows users to view their friends’ statuses and most recent bets in a supportive, neutral format, avoiding the pitfalls of competition and promoting a more positive user experience.
+
+</ProjectImagesBlock>
+
+### Turning the Web-Extension into a Full Website
 
 <ProjectImagesBlock
     images={[
@@ -346,21 +465,26 @@ We also learned that much of the language that we used was not necessarily frien
         },
         {
             src: finalpaper,
-            alt: "Paper prototype with full website, web extension, and notifications",
+            alt: "Paper Prototype of Full Website with Stats",
             caption: "Final Paper Prototype"
         },
+        {
+            src: newfinal2,
+            alt: "stats dropdown dropped down",
+            caption: "Final Paper Prototype (2)"
+        }
     ]}
-    direction={"column"}
-    width={6}
+    direction={"row"}
+    width={12}
     maxHeight={"200px"}
 >
 
-During our design research and iterative design process we made heavy use of paper sketching and prototyping.
-We conducted our usability tests on our paper prototypes, and before making any form of a digital mockup, we would make 
+During our iterative design process we made heavy use of paper sketching and prototyping. We conducted our usability tests on our paper prototypes, and before making any form of a digital mockup, we would make 
 paper prototypes of the pages or functionalities, and conduct either usability or inspection based tests on these pages, 
-and revise and repeat until we felt comfortable with the design on paper. The main insight that we learned from paper prototyping
-was that keeping everything within the context of a web extesnion would clutter all of the information, and that we needed to expand 
-to a full website alongside the web extension, just because all the writing on the paper was simply so small. After which we fully revamped
-our work to allow the web extension to link to the website.
-
+and revise and repeat until we felt comfortable with the design on paper. From this paper prototyping we learned that
+keeping all of our information within the context of a web extesnion cluttered all the text, and that we needed to expand 
+to a full website alongside the web extension, just because all the writing on the paper was simply so small. To revise this, we decided to 
+migrate the information that was cluttered into a website where there is much more screen/paper space to utilize to display information to the user.
+While this was a major change to our overall design, the content of our functionalities and tasks
+was not changed much, but just generally made more visible, now that it was in the frame of an entire website.
 </ProjectImagesBlock>
